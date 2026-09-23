@@ -1,0 +1,338 @@
+[
+  {
+    "CouponType": "Percentage",
+    "DiscountAmount": null,
+    "DiscountPercentage": 5,
+    "RequiredPoints": 250,
+    "MinimumOrderAmount": 500,
+    "MaximumDiscountAmount": 150,
+    "UserVisibility": "Active",
+    "CreatedAt": "2026-09-13T00:00:00",
+    "UpdatedAt": "2026-09-13T00:00:00",
+    "Translations": [
+      {
+        "Language": "English",
+        "Name": "5% Discount",
+        "Description": "Get 5% off your order. Minimum order amount: 500 EGP. Maximum discount: 150 EGP."
+      },
+      {
+        "Language": "Arabic",
+        "Name": "خصم 5%",
+        "Description": "احصل على خصم 5% على طلبك. الحد الأدنى لقيمة الطلب: 500 جنيه. الحد الأقصى للخصم: 150 جنيه."
+      },
+      {
+        "Language": "Spanish",
+        "Name": "5% de descuento",
+        "Description": "Obtén un 5% de descuento en tu pedido. Pedido mínimo: 500 EGP. Descuento máximo: 150 EGP."
+      }
+    ]
+  },
+  {
+    "CouponType": "Percentage",
+    "DiscountAmount": null,
+    "DiscountPercentage": 10,
+    "RequiredPoints": 500,
+    "MinimumOrderAmount": 750,
+    "MaximumDiscountAmount": 250,
+    "UserVisibility": "Active",
+    "CreatedAt": "2026-09-13T00:00:00",
+    "UpdatedAt": "2026-09-13T00:00:00",
+    "Translations": [
+      {
+        "Language": "English",
+        "Name": "10% Discount",
+        "Description": "Get 10% off your order. Minimum order amount: 750 EGP. Maximum discount: 250 EGP."
+      },
+      {
+        "Language": "Arabic",
+        "Name": "خصم 10%",
+        "Description": "احصل على خصم 10% على طلبك. الحد الأدنى لقيمة الطلب: 750 جنيه. الحد الأقصى للخصم: 250 جنيه."
+      },
+      {
+        "Language": "Spanish",
+        "Name": "10% de descuento",
+        "Description": "Obtén un 10% de descuento en tu pedido. Pedido mínimo: 750 EGP. Descuento máximo: 250 EGP."
+      }
+    ]
+  },
+  {
+    "CouponType": "Percentage",
+    "DiscountAmount": null,
+    "DiscountPercentage": 15,
+    "RequiredPoints": 750,
+    "MinimumOrderAmount": 1000,
+    "MaximumDiscountAmount": 350,
+    "UserVisibility": "Active",
+    "CreatedAt": "2026-09-13T00:00:00",
+    "UpdatedAt": "2026-09-13T00:00:00",
+    "Translations": [
+      {
+        "Language": "English",
+        "Name": "15% Discount",
+        "Description": "Get 15% off your order. Minimum order amount: 1000 EGP. Maximum discount: 350 EGP."
+      },
+      {
+        "Language": "Arabic",
+        "Name": "خصم 15%",
+        "Description": "احصل على خصم 15% على طلبك. الحد الأدنى لقيمة الطلب: 1000 جنيه. الحد الأقصى للخصم: 350 جنيه."
+      },
+      {
+        "Language": "Spanish",
+        "Name": "15% de descuento",
+        "Description": "Obtén un 15% de descuento en tu pedido. Pedido mínimo: 1000 EGP. Descuento máximo: 350 EGP."
+      }
+    ]
+  },
+  {
+    "CouponType": "Percentage",
+    "DiscountAmount": null,
+    "DiscountPercentage": 20,
+    "RequiredPoints": 1000,
+    "MinimumOrderAmount": 1250,
+    "MaximumDiscountAmount": 500,
+    "UserVisibility": "Active",
+    "CreatedAt": "2026-09-13T00:00:00",
+    "UpdatedAt": "2026-09-13T00:00:00",
+    "Translations": [
+      {
+        "Language": "English",
+        "Name": "20% Discount",
+        "Description": "Get 20% off your order. Minimum order amount: 1250 EGP. Maximum discount: 500 EGP."
+      },
+      {
+        "Language": "Arabic",
+        "Name": "خصم 20%",
+        "Description": "احصل على خصم 20% على طلبك. الحد الأدنى لقيمة الطلب: 1250 جنيه. الحد الأقصى للخصم: 500 جنيه."
+      },
+      {
+        "Language": "Spanish",
+        "Name": "20% de descuento",
+        "Description": "Obtén un 20% de descuento en tu pedido. Pedido mínimo: 1250 EGP. Descuento máximo: 500 EGP."
+      }
+    ]
+  },
+  {
+    "CouponType": "Percentage",
+    "DiscountAmount": null,
+    "DiscountPercentage": 25,
+    "RequiredPoints": 1500,
+    "MinimumOrderAmount": 1500,
+    "MaximumDiscountAmount": 600,
+    "UserVisibility": "Active",
+    "CreatedAt": "2026-09-13T00:00:00",
+    "UpdatedAt": "2026-09-13T00:00:00",
+    "Translations": [
+      {
+        "Language": "English",
+        "Name": "25% Discount",
+        "Description": "Get 25% off your order. Minimum order amount: 1500 EGP. Maximum discount: 600 EGP."
+      },
+      {
+        "Language": "Arabic",
+        "Name": "خصم 25%",
+        "Description": "احصل على خصم 25% على طلبك. الحد الأدنى لقيمة الطلب: 1500 جنيه. الحد الأقصى للخصم: 600 جنيه."
+      },
+      {
+        "Language": "Spanish",
+        "Name": "25% de descuento",
+        "Description": "Obtén un 25% de descuento en tu pedido. Pedido mínimo: 1500 EGP. Descuento máximo: 600 EGP."
+      }
+    ]
+  },
+  {
+    "CouponType": "FixedAmount",
+    "DiscountAmount": 50,
+    "DiscountPercentage": null,
+    "RequiredPoints": 500,
+    "MinimumOrderAmount": 500,
+    "MaximumDiscountAmount": null,
+    "UserVisibility": "Active",
+    "CreatedAt": "2026-09-13T00:00:00",
+    "UpdatedAt": "2026-09-13T00:00:00",
+    "Translations": [
+      {
+        "Language": "English",
+        "Name": "50 EGP Discount",
+        "Description": "Get 50 EGP off your order. Minimum order amount: 500 EGP."
+      },
+      {
+        "Language": "Arabic",
+        "Name": "خصم 50 جنيه",
+        "Description": "احصل على خصم 50 جنيه من طلبك. الحد الأدنى لقيمة الطلب: 500 جنيه."
+      },
+      {
+        "Language": "Spanish",
+        "Name": "50 EGP de descuento",
+        "Description": "Obtén 50 EGP de descuento en tu pedido. Pedido mínimo: 500 EGP."
+      }
+    ]
+  },
+  {
+    "CouponType": "FixedAmount",
+    "DiscountAmount": 100,
+    "DiscountPercentage": null,
+    "RequiredPoints": 1000,
+    "MinimumOrderAmount": 750,
+    "MaximumDiscountAmount": null,
+    "UserVisibility": "Active",
+    "CreatedAt": "2026-09-13T00:00:00",
+    "UpdatedAt": "2026-09-13T00:00:00",
+    "Translations": [
+      {
+        "Language": "English",
+        "Name": "100 EGP Discount",
+        "Description": "Get 100 EGP off your order. Minimum order amount: 750 EGP."
+      },
+      {
+        "Language": "Arabic",
+        "Name": "خصم 100 جنيه",
+        "Description": "احصل على خصم 100 جنيه من طلبك. الحد الأدنى لقيمة الطلب: 750 جنيه."
+      },
+      {
+        "Language": "Spanish",
+        "Name": "100 EGP de descuento",
+        "Description": "Obtén 100 EGP de descuento en tu pedido. Pedido mínimo: 750 EGP."
+      }
+    ]
+  },
+  {
+    "CouponType": "FixedAmount",
+    "DiscountAmount": 200,
+    "DiscountPercentage": null,
+    "RequiredPoints": 2000,
+    "MinimumOrderAmount": 1000,
+    "MaximumDiscountAmount": null,
+    "UserVisibility": "Active",
+    "CreatedAt": "2026-09-13T00:00:00",
+    "UpdatedAt": "2026-09-13T00:00:00",
+    "Translations": [
+      {
+        "Language": "English",
+        "Name": "200 EGP Discount",
+        "Description": "Get 200 EGP off your order. Minimum order amount: 1000 EGP."
+      },
+      {
+        "Language": "Arabic",
+        "Name": "خصم 200 جنيه",
+        "Description": "احصل على خصم 200 جنيه من طلبك. الحد الأدنى لقيمة الطلب: 1000 جنيه."
+      },
+      {
+        "Language": "Spanish",
+        "Name": "200 EGP de descuento",
+        "Description": "Obtén 200 EGP de descuento en tu pedido. Pedido mínimo: 1000 EGP."
+      }
+    ]
+  },
+  {
+    "CouponType": "FreeShipping",
+    "DiscountAmount": null,
+    "DiscountPercentage": null,
+    "RequiredPoints": 300,
+    "MinimumOrderAmount": 500,
+    "MaximumDiscountAmount": null,
+    "UserVisibility": "Active",
+    "CreatedAt": "2026-09-13T00:00:00",
+    "UpdatedAt": "2026-09-13T00:00:00",
+    "Translations": [
+      {
+        "Language": "English",
+        "Name": "Free Shipping",
+        "Description": "Get free shipping on your order. Minimum order amount: 500 EGP."
+      },
+      {
+        "Language": "Arabic",
+        "Name": "شحن مجاني",
+        "Description": "احصل على شحن مجاني لطلبك. الحد الأدنى لقيمة الطلب: 500 جنيه."
+      },
+      {
+        "Language": "Spanish",
+        "Name": "Envío gratis",
+        "Description": "Obtén envío gratis en tu pedido. Pedido mínimo: 500 EGP."
+      }
+    ]
+  },
+  {
+    "CouponType": "FreeShippingUpgrade",
+    "DiscountAmount": null,
+    "DiscountPercentage": null,
+    "RequiredPoints": 200,
+    "MinimumOrderAmount": null,
+    "MaximumDiscountAmount": null,
+    "UserVisibility": "Active",
+    "CreatedAt": "2026-09-13T00:00:00",
+    "UpdatedAt": "2026-09-13T00:00:00",
+    "Translations": [
+      {
+        "Language": "English",
+        "Name": "Free Shipping Upgrade",
+        "Description": "Upgrade your shipping from normal to urgent for free."
+      },
+      {
+        "Language": "Arabic",
+        "Name": "ترقية شحن مجانية",
+        "Description": "قم بترقية الشحن من عادي إلى عاجل مجانًا."
+      },
+      {
+        "Language": "Spanish",
+        "Name": "Actualización de envío gratis",
+        "Description": "Actualiza el envío de normal a urgente gratis."
+      }
+    ]
+  },
+  {
+    "CouponType": "Percentage",
+    "DiscountAmount": null,
+    "DiscountPercentage": 10,
+    "RequiredPoints": null,
+    "MinimumOrderAmount": 500,
+    "MaximumDiscountAmount": 250,
+    "UserVisibility": "Inactive",
+    "CreatedAt": "2026-09-13T00:00:00",
+    "UpdatedAt": "2026-09-13T00:00:00",
+    "Translations": [
+      {
+        "Language": "English",
+        "Name": "Welcome Coupon",
+        "Description": "Get 10% off your first order. Minimum order amount: 500 EGP. Maximum discount: 250 EGP. This coupon is a welcome gift from MK Galácticos."
+      },
+      {
+        "Language": "Arabic",
+        "Name": "كوبون ترحيبي",
+        "Description": "احصل على خصم 10% على طلبك الأول. الحد الأدنى لقيمة الطلب: 500 جنيه. الحد الأقصى للخصم: 250 جنيه. هذا الكوبون هدية ترحيبية."
+      },
+      {
+        "Language": "Spanish",
+        "Name": "Cupón de bienvenida",
+        "Description": "Obtén un 10% de descuento en tu primer pedido. Pedido mínimo: 500 EGP. Descuento máximo: 250 EGP. Este cupón es un regalo de bienvenida de MK Galácticos."
+      }
+    ]
+  },
+  {
+    "CouponType": "FixedAmount",
+    "DiscountAmount": 200,
+    "DiscountPercentage": null,
+    "RequiredPoints": null,
+    "MinimumOrderAmount": 1000,
+    "MaximumDiscountAmount": null,
+    "UserVisibility": "Inactive",
+    "CreatedAt": "2026-09-13T00:00:00",
+    "UpdatedAt": "2026-09-13T00:00:00",
+    "Translations": [
+      {
+        "Language": "English",
+        "Name": "Special Gift",
+        "Description": "Get 200 EGP off your order. Minimum order amount: 1000 EGP. This coupon is a special gift from MK Galácticos."
+      },
+      {
+        "Language": "Arabic",
+        "Name": "هدية خاصة",
+        "Description": "احصل على خصم 200 جنيه من طلبك. الحد الأدنى لقيمة الطلب: 1000 جنيه. هذا الكوبون هدية خاصة من MK Galácticos."
+      },
+      {
+        "Language": "Spanish",
+        "Name": "Regalo especial",
+        "Description": "Obtén 200 EGP de descuento en tu pedido. Pedido mínimo: 1000 EGP. Este cupón es un regalo especial de MK Galácticos."
+      }
+    ]
+  }
+]

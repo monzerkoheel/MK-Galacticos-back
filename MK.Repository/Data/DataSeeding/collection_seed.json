@@ -1,0 +1,152 @@
+[
+  {
+    "ImageUrl": "uploads/images/collections/k7m4x2p9.png",
+    "Status": "Active",
+    "DisplayOrder": 1,
+    "Slug": "real-madrid-legends",
+    "CreatedAt": "2026-09-14T18:49:00Z",
+    "UpdatedAt": "2026-09-14T18:49:00Z",
+    "Translations": [
+      {
+        "Language": "English",
+        "Name": "Real Madrid Legends",
+        "Description": "Celebrate the icons who shaped Real Madrid's history with legendary kits inspired by unforgettable eras, iconic players, historic victories, and timeless moments that continue to define the spirit and greatness of the club."
+      },
+      {
+        "Language": "Arabic",
+        "Name": "أساطير ريال مدريد",
+        "Description": "احتفل بأساطير ريال مدريد الذين صنعوا تاريخ النادي، مع قمصان مستوحاة من عصور خالدة ونجوم أيقونيين وانتصارات تاريخية ولحظات لا تُنسى لا تزال تجسد روح النادي وعظمته."
+      },
+      {
+        "Language": "Spanish",
+        "Name": "Leyendas del Real Madrid",
+        "Description": "Celebra a los iconos que marcaron la historia del Real Madrid con camisetas inspiradas en épocas inolvidables, jugadores legendarios, victorias históricas y momentos eternos que siguen definiendo el espíritu y la grandeza del club."
+      }
+    ]
+  },
+  {
+    "ImageUrl": "uploads/images/collections/r3v8n1q6.png",
+    "Status": "Active",
+    "DisplayOrder": 2,
+    "Slug": "cristiano-editions",
+    "CreatedAt": "2026-09-14T18:49:00Z",
+    "UpdatedAt": "2026-09-14T18:49:00Z",
+    "Translations": [
+      {
+        "Language": "English",
+        "Name": "Cristiano Editions",
+        "Description": "Forged in the fire of relentless ambition, these editions celebrate the legacy of Cristiano through iconic kits, unforgettable goals, record-breaking achievements, and the passion of a player who created some of football's most memorable moments."
+      },
+      {
+        "Language": "Arabic",
+        "Name": "إصدارات كريستيانو",
+        "Description": "صُنعت بروح الطموح الذي لا يعرف التوقف، وتحتفي هذه الإصدارات بإرث كريستيانو من خلال قمصان أيقونية وأهداف لا تُنسى وإنجازات قياسية وشغف لاعب صنع بعضًا من أكثر اللحظات تميزًا في تاريخ كرة القدم."
+      },
+      {
+        "Language": "Spanish",
+        "Name": "Ediciones Cristiano",
+        "Description": "Forjadas con una ambición incansable, estas ediciones celebran el legado de Cristiano a través de camisetas icónicas, goles inolvidables, récords históricos y la pasión de un jugador que protagonizó algunos de los momentos más memorables del fútbol."
+      }
+    ]
+  },
+  {
+    "ImageUrl": "uploads/images/collections/m5t9c4w2.png",
+    "Status": "Active",
+    "DisplayOrder": 3,
+    "Slug": "iconic-players",
+    "CreatedAt": "2026-09-14T18:49:00Z",
+    "UpdatedAt": "2026-09-14T18:49:00Z",
+    "Translations": [
+      {
+        "Language": "English",
+        "Name": "Iconic Players",
+        "Description": "Time bends for icons. Discover memorable kits inspired by legendary players whose unique style, extraordinary talent, unforgettable performances, and lasting influence left an everlasting mark on football and inspired generations of fans around the world."
+      },
+      {
+        "Language": "Arabic",
+        "Name": "اللاعبون الأيقونيون",
+        "Description": "الزمن ينحني أمام الأساطير. اكتشف قمصانًا مميزة مستوحاة من لاعبين ترك أسلوبهم الفريد وموهبتهم الاستثنائية وأداؤهم الذي لا يُنسى وتأثيرهم المستمر بصمة خالدة في كرة القدم وألهموا أجيالًا من الجماهير حول العالم."
+      },
+      {
+        "Language": "Spanish",
+        "Name": "Jugadores Icónicos",
+        "Description": "El tiempo se detiene ante los iconos. Descubre camisetas memorables inspiradas en jugadores legendarios cuyo estilo único, talento extraordinario, actuaciones inolvidables e influencia duradera dejaron una huella eterna en el fútbol e inspiraron a generaciones de aficionados en todo el mundo."
+      }
+    ]
+  },
+  {
+    "ImageUrl": "uploads/images/collections/p2x7d9h5.png",
+    "Status": "Active",
+    "DisplayOrder": 4,
+    "Slug": "current-season",
+    "CreatedAt": "2026-09-14T18:49:00Z",
+    "UpdatedAt": "2026-09-14T18:49:00Z",
+    "Translations": [
+      {
+        "Language": "English",
+        "Name": "Current Season",
+        "Description": "This is the now. Discover the latest kits capturing the energy, identity, and excitement of the current football season, from the newest designs and colors to the shirts worn on today's biggest stages."
+      },
+      {
+        "Language": "Arabic",
+        "Name": "الموسم الحالي",
+        "Description": "هذا هو الحاضر. اكتشف أحدث القمصان التي تجسد طاقة وهوية وحماس موسم كرة القدم الحالي، بداية من أحدث التصميمات والألوان وحتى القمصان التي تظهر اليوم على أكبر ملاعب كرة القدم."
+      },
+      {
+        "Language": "Spanish",
+        "Name": "Temporada Actual",
+        "Description": "Este es el presente. Descubre las camisetas más recientes que representan la energía, identidad y emoción de la temporada actual, desde los nuevos diseños y colores hasta las equipaciones que brillan hoy en los escenarios más importantes del fútbol."
+      }
+    ]
+  },
+  {
+    "ImageUrl": "uploads/images/collections/z6b3q8v1.png",
+    "Status": "Active",
+    "DisplayOrder": 5,
+    "Slug": "national-teams",
+    "CreatedAt": "2026-09-14T18:49:00Z",
+    "UpdatedAt": "2026-09-14T18:49:00Z",
+    "Translations": [
+      {
+        "Language": "English",
+        "Name": "National Teams",
+        "Description": "Bound by borders, united by pride. Explore football shirts that carry the colors, identity, heritage, and spirit of nations around the world, celebrating the teams and stories that bring millions of fans together under one flag."
+      },
+      {
+        "Language": "Arabic",
+        "Name": "المنتخبات الوطنية",
+        "Description": "تجمعها الحدود وتوحدها مشاعر الفخر. اكتشف قمصانًا تحمل ألوان وهوية وتراث وروح المنتخبات من مختلف أنحاء العالم، وتحتفي بالفرق والقصص التي تجمع ملايين الجماهير تحت راية واحدة."
+      },
+      {
+        "Language": "Spanish",
+        "Name": "Selecciones Nacionales",
+        "Description": "Unidas por el orgullo de representar a su país. Explora camisetas que llevan los colores, la identidad, el legado y el espíritu de las naciones de todo el mundo, celebrando a los equipos y las historias que reúnen a millones de aficionados bajo una misma bandera."
+      }
+    ]
+  },
+  {
+    "ImageUrl": "uploads/images/collections/n4k8s2y7.png",
+    "Status": "Active",
+    "DisplayOrder": 6,
+    "Slug": "concept-editions",
+    "CreatedAt": "2026-09-14T18:49:00Z",
+    "UpdatedAt": "2026-09-14T18:49:00Z",
+    "Translations": [
+      {
+        "Language": "English",
+        "Name": "Concept Editions",
+        "Description": "Born from imagination and rebellion, these unique pieces break away from tradition to turn bold ideas into football-inspired designs. Discover creative concepts, unexpected details, and artistic visions made for those who see the beautiful game differently."
+      },
+      {
+        "Language": "Arabic",
+        "Name": "إصدارات مبتكرة",
+        "Description": "ولدت من الخيال والتمرد على المألوف، وتخرج هذه القطع الفريدة عن التقاليد لتحول الأفكار الجريئة إلى تصميمات مستوحاة من كرة القدم. اكتشف أفكارًا إبداعية وتفاصيل غير متوقعة ورؤى فنية صُممت لمن يرون اللعبة الجميلة من منظور مختلف."
+      },
+      {
+        "Language": "Spanish",
+        "Name": "Ediciones Conceptuales",
+        "Description": "Nacidas de la imaginación y la rebeldía, estas piezas únicas rompen con la tradición para convertir ideas atrevidas en diseños inspirados en el fútbol. Descubre conceptos creativos, detalles inesperados y visiones artísticas creadas para quienes ven el deporte de una manera diferente."
+      }
+    ]
+  }
+]

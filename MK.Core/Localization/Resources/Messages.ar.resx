@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccountAlreadyBanned" xml:space="preserve">
+    <value>الحساب محظور بالفعل.</value>
+  </data>
+  <data name="AccountAlreadyDeleted" xml:space="preserve">
+    <value>الحساب محذوف بالفعل.</value>
+  </data>
+  <data name="AccountAlreadyExists" xml:space="preserve">
+    <value>هذا الحساب موجود بالفعل</value>
+  </data>
+  <data name="AccountBanned" xml:space="preserve">
+    <value>تم حظر حسابك. يرجى التواصل مع فريق الدعم إذا كنت بحاجة إلى المساعدة.</value>
+  </data>
+  <data name="AccountDeleted" xml:space="preserve">
+    <value>تم حذف حسابك. يرجى التواصل مع فريق الدعم إذا كنت بحاجة إلى المساعدة.</value>
+  </data>
+  <data name="AccountDeletedSuccessfully" xml:space="preserve">
+    <value>تم حذف حسابك بنجاح.</value>
+  </data>
+  <data name="AccountNotBanned" xml:space="preserve">
+    <value>الحساب غير محظور.</value>
+  </data>
+  <data name="AccountNotDeleted" xml:space="preserve">
+    <value>الحساب غير مُصنّف كمحذوف.</value>
+  </data>
+  <data name="AccountNotFound" xml:space="preserve">
+    <value>لم يتم العثور على حساب مرتبط بهذا البريد الإلكتروني.</value>
+  </data>
+  <data name="AccountRestoredSuccessfully" xml:space="preserve">
+    <value>تم استعادة الحساب بنجاح.</value>
+  </data>
+  <data name="AddedSuccessfully" xml:space="preserve">
+    <value>&#x8;تمت الإضافة بنجاح.</value>
+  </data>
+  <data name="Added_Successfully" xml:space="preserve">
+    <value>تمت إضافة {0} بنجاح.</value>
+  </data>
+  <data name="AddressDeletedSuccessfully" xml:space="preserve">
+    <value>تم حذف العنوان بنجاح.</value>
+  </data>
+  <data name="AddressNameAlreadyExists" xml:space="preserve">
+    <value>يوجد عنوان بهذا الاسم بالفعل.</value>
+  </data>
+  <data name="AddressNotFound" xml:space="preserve">
+    <value>العنوان غير موجود.</value>
+  </data>
+  <data name="AddressSavedSuccessfully" xml:space="preserve">
+    <value>تم حفظ العنوان بنجاح.</value>
+  </data>
+  <data name="AllTranslationsRequired" xml:space="preserve">
+    <value>يجب إدخال جميع الترجمات.</value>
+  </data>
+  <data name="AlreadyExists" xml:space="preserve">
+    <value>{0} موجود بالفعل.</value>
+  </data>
+  <data name="BackInStockNotification" xml:space="preserve">
+    <value>سنُخطرك عندما يتوفر المنتج مرة أخرى.</value>
+  </data>
+  <data name="CannotBanManagementUser" xml:space="preserve">
+    <value>لا يمكنك حظر مستخدم من الإدارة.</value>
+  </data>
+  <data name="CannotChangeEmailAfterActivation" xml:space="preserve">
+    <value>لا يمكنك تغيير بريدك الإلكتروني بعد تفعيل الحساب.</value>
+  </data>
+  <data name="CannotDeleteWithRelatedRecords" xml:space="preserve">
+    <value>مينفعش تمسح {0} لأنها مرتبطة بسجلات موجودة. ممكن توقفها (Inactive) بدل ما تمسحها.</value>
+  </data>
+  <data name="CartItem_CustomPrintDataRequired" xml:space="preserve">
+    <value>يجب إدخال اسم ورقم الطباعة المخصصة معًا.</value>
+  </data>
+  <data name="CartItem_IsAlreadyExit" xml:space="preserve">
+    <value>هذا المنتج موجود بالفعل في سلة التسوق بنفس الخيارات المحددة.</value>
+  </data>
+  <data name="CartItem_IsOutOfStock" xml:space="preserve">
+    <value>هذا المنتج غير متوفر حاليًا، ولكن يمكنك إضافته إلى قائمة أمنياتك.</value>
+  </data>
+  <data name="CartItem_NotBelongToUser" xml:space="preserve">
+    <value>هذا العنصر في سلة التسوق لا ينتمي إليك.</value>
+  </data>
+  <data name="CartItem_NotEnoughStock" xml:space="preserve">
+    <value>الكمية المتوفرة غير كافية للمنتج والمقاس والكمية المحددة.</value>
+  </data>
+  <data name="CollectionCreatedSuccessfully" xml:space="preserve">
+    <value>تم إنشاء المجموعة بنجاح.</value>
+  </data>
+  <data name="CollectionDeletedSuccessfully" xml:space="preserve">
+    <value>تم حذف المجموعة بنجاح.</value>
+  </data>
+  <data name="CollectionNotFound" xml:space="preserve">
+    <value>لم يتم العثور على المجموعة.</value>
+  </data>
+  <data name="CollectionUpdatedSuccessfully" xml:space="preserve">
+    <value>تم تحديث المجموعة بنجاح.</value>
+  </data>
+  <data name="Coupon_AddedSuccessfully" xml:space="preserve">
+    <value>تم إضافة الكوبون بنجاح.</value>
+  </data>
+  <data name="Coupon_AllTranslationsRequired" xml:space="preserve">
+    <value>يجب إدخال جميع الترجمات.</value>
+  </data>
+  <data name="Coupon_AssignedSuccessfully" xml:space="preserve">
+    <value>تم إضافة الكوبون بنجاح.  </value>
+  </data>
+  <data name="Coupon_CannotDeleteWithValidUserCoupons" xml:space="preserve">
+    <value>لا يمكن حذف هذا الكوبون لأنه لا يزال مرتبطًا بكوبونات مستخدمين صالحة. يمكنك تعطيل الكوبون الآن وحذفه لاحقًا.</value>
+  </data>
+  <data name="Coupon_DeletedSuccessfully" xml:space="preserve">
+    <value>تم حذف الكوبون بنجاح.</value>
+  </data>
+  <data name="Coupon_DiscountAmountGreaterThanZero" xml:space="preserve">
+    <value>يجب أن يكون مبلغ الخصم أكبر من صفر.</value>
+  </data>
+  <data name="Coupon_DiscountAmountNotAllowedForPercentage" xml:space="preserve">
+    <value>لا يُسمح بتحديد مبلغ خصم مع كوبونات الخصم بالنسبة المئوية.</value>
+  </data>
+  <data name="Coupon_DiscountAmountRequired" xml:space="preserve">
+    <value>مبلغ الخصم مطلوب.</value>
+  </data>
+  <data name="Coupon_DiscountPercentageNotAllowedForFixedAmount" xml:space="preserve">
+    <value>لا يُسمح بتحديد نسبة خصم مع كوبونات المبلغ الثابت.</value>
+  </data>
+  <data name="Coupon_DiscountPercentageRange" xml:space="preserve">
+    <value>يجب أن تكون نسبة الخصم بين 0 و100.</value>
+  </data>
+  <data name="Coupon_DiscountPercentageRequired" xml:space="preserve">
+    <value>نسبة الخصم مطلوبة.</value>
+  </data>
+  <data name="Coupon_DiscountValuesNotAllowedForShipping" xml:space="preserve">
+    <value>لا يُسمح بتحديد قيم خصم مع كوبونات الشحن.</value>
+  </data>
+  <data name="Coupon_DuplicateCoupon" xml:space="preserve">
+    <value>هذا الكوبون موجود بالفعل.</value>
+  </data>
+  <data name="Coupon_DuplicateTranslations" xml:space="preserve">
+    <value>لا يُسمح بتكرار ترجمات الكوبون.</value>
+  </data>
+  <data name="Coupon_InvalidType" xml:space="preserve">
+    <value>نوع الكوبون غير صالح.</value>
+  </data>
+  <data name="Coupon_LoyaltyPointsNotEnough" xml:space="preserve">
+    <value>لا تملك نقاط ولاء كافية لاستبدال هذا الكوبون.</value>
+  </data>
+  <data name="Coupon_MaximumDiscountAmountGreaterThanZero" xml:space="preserve">
+    <value>يجب أن يكون الحد الأقصى للخصم أكبر من صفر.</value>
+  </data>
+  <data name="Coupon_MinimumOrderAmountGreaterThanZero" xml:space="preserve">
+    <value>يجب أن يكون الحد الأدنى لقيمة الطلب أكبر من صفر.</value>
+  </data>
+  <data name="Coupon_NotFound" xml:space="preserve">
+    <value>الكوبون غير موجود.</value>
+  </data>
+  <data name="Coupon_RequiredPointsGreaterThanZero" xml:space="preserve">
+    <value>يجب أن تكون النقاط المطلوبة أكبر من صفر.</value>
+  </data>
+  <data name="Coupon_TranslationDescriptionRequired" xml:space="preserve">
+    <value>وصف ترجمة الكوبون للغة {0} مطلوب.</value>
+  </data>
+  <data name="Coupon_TranslationNameRequired" xml:space="preserve">
+    <value>اسم ترجمة الكوبون للغة {0} مطلوب.</value>
+  </data>
+  <data name="Coupon_TranslationNotFound" xml:space="preserve">
+    <value>لم يتم العثور على ترجمة الكوبون للغة {0}.</value>
+  </data>
+  <data name="Coupon_UpdatedSuccessfully" xml:space="preserve">
+    <value>تم تحديث الكوبون بنجاح.</value>
+  </data>
+  <data name="CreatedSuccessfully" xml:space="preserve">
+    <value>تم إنشاء {0} بنجاح.</value>
+  </data>
+  <data name="DeletedSuccessfully" xml:space="preserve">
+    <value>تم حذف {0}  بنجاح.</value>
+  </data>
+  <data name="DuplicateField" xml:space="preserve">
+    <value>لا يمكنك استخدام {0} لأن هذه القيمة موجودة بالفعل في {1}.</value>
+  </data>
+  <data name="DuplicateStocks" xml:space="preserve">
+    <value>تم إضافة المخزون بالمقاس {0} والنوع {1} مرتين.</value>
+  </data>
+  <data name="DuplicateTranslations" xml:space="preserve">
+    <value>لا يُسمح بوجود ترجمات مكررة.</value>
+  </data>
+  <data name="EmailAlreadyExists" xml:space="preserve">
+    <value>هذا البريد الإلكتروني مستخدم بالفعل.</value>
+  </data>
+  <data name="EmailAlreadyVerified" xml:space="preserve">
+    <value>عنوان بريدك الإلكتروني تم التحقق منه بالفعل. يرجى محاولة تسجيل الدخول.</value>
+  </data>
+  <data name="EmailChangedSuccessfully" xml:space="preserve">
+    <value>تم تغيير بريدك الإلكتروني بنجاح. يرجى التحقق من بريدك الإلكتروني الجديد للحصول على رمز التحقق.</value>
+  </data>
+  <data name="EmailConfirmedSuccessfully" xml:space="preserve">
+    <value>تم تأكيد بريدك الإلكتروني بنجاح. يرجى محاولة تسجيل الدخول.</value>
+  </data>
+  <data name="EmailNotConfirmed" xml:space="preserve">
+    <value>يرجى تأكيد بريدك الإلكتروني قبل تسجيل الدخول.</value>
+  </data>
+  <data name="EmailVerificationRequired" xml:space="preserve">
+    <value>يرجى تأكيد بريدك الإلكتروني باستخدام رمز التحقق (OTP) المُرسل إلى بريدك الإلكتروني لإكمال التسجيل.</value>
+  </data>
+  <data name="ForgotPasswordEmailSent" xml:space="preserve">
+    <value>تم إرسال رمز لإعادة تعيين كلمة المرور.</value>
+  </data>
+  <data name="ImageAlreadyDeleted" xml:space="preserve">
+    <value>الصورة محذوفة بالفعل.</value>
+  </data>
+  <data name="InsufficientPermissions" xml:space="preserve">
+    <value>ليس لديك صلاحية لتنفيذ هذا الإجراء.</value>
+  </data>
+  <data name="InvalidOtp" xml:space="preserve">
+    <value>رمز التحقق الذي أدخلته غير صحيح.</value>
+  </data>
+  <data name="InvalidRefreshToken" xml:space="preserve">
+    <value>رمز التحديث غير صالح.</value>
+  </data>
+  <data name="InvalidResetToken" xml:space="preserve">
+    <value>رمز إعادة تعيين كلمة المرور غير صالح أو انتهت صلاحيته.</value>
+  </data>
+  <data name="LogoutSuccessfully" xml:space="preserve">
+    <value>تم تسجيل خروجك بنجاح.</value>
+  </data>
+  <data name="MainImageRequired" xml:space="preserve">
+    <value>يجب إضافة صورة رئيسية لجنس {0}.</value>
+  </data>
+  <data name="MultipleMainImages" xml:space="preserve">
+    <value>يُسمح بصورة رئيسية واحدة فقط لكل جنس.</value>
+  </data>
+  <data name="NoDataToUpdate" xml:space="preserve">
+    <value>يجب تحديد حقل واحد على الأقل للتحديث.</value>
+  </data>
+  <data name="NonMainImageCannotBeFirst" xml:space="preserve">
+    <value>لا يمكن أن يكون ترتيب عرض الصورة غير الرئيسية 1.</value>
+  </data>
+  <data name="NotFound" xml:space="preserve">
+    <value>{0}  غير موجود.</value>
+  </data>
+  <data name="Notification_IsAlreadyExit" xml:space="preserve">
+    <value>الإشعار موجود بالفعل.</value>
+  </data>
+  <data name="OtpExpired" xml:space="preserve">
+    <value>انتهت صلاحية رمز التحقق. يرجى طلب رمز جديد.</value>
+  </data>
+  <data name="OtpResendBlocked" xml:space="preserve">
+    <value>لقد تجاوزت الحد المسموح لطلبات رمز التحقق. يرجى المحاولة مرة أخرى لاحقًا.</value>
+  </data>
+  <data name="OtpResendCooldown" xml:space="preserve">
+    <value>يمكنك طلب رمز تحقق جديد بعد دقيقة واحدة.</value>
+  </data>
+  <data name="OtpResentSuccessfully" xml:space="preserve">
+    <value>تم إرسال رمز تحقق جديد إلى بريدك الإلكتروني.</value>
+  </data>
+  <data name="PasswordChangedSuccessfully" xml:space="preserve">
+    <value>تم تغيير كلمة المرور بنجاح.</value>
+  </data>
+  <data name="PasswordRequirements" xml:space="preserve">
+    <value>يجب أن تتكون كلمة المرور من 8 إلى 20 حرفًا، وأن تحتوي على حرف كبير واحد على الأقل، وحرف صغير واحد، ورقم واحد، ورمز خاص واحد.</value>
+  </data>
+  <data name="PasswordResetSuccessfully" xml:space="preserve">
+    <value>تم إعادة تعيين كلمة المرور بنجاح.</value>
+  </data>
+  <data name="Product_CannotDeleteWithRelatedData" xml:space="preserve">
+    <value>لا يمكن حذف هذا المنتج لأنه لا يزال مرتبطًا ببيانات أخرى. يمكنك تعطيل المنتج الآن وحذفه لاحقًا.</value>
+  </data>
+  <data name="Product_IsAlreadyExit" xml:space="preserve">
+    <value>&#x8;المنتج موجود بالفعل.</value>
+  </data>
+  <data name="Product_IsNotInWishlist" xml:space="preserve">
+    <value>المنتج غير موجود في قائمة الرغبات.</value>
+  </data>
+  <data name="QuantityMustBeGreaterThanZero" xml:space="preserve">
+    <value>يجب أن تكون الكمية أكبر من صفر.</value>
+  </data>
+  <data name="RefreshTokenExpired" xml:space="preserve">
+    <value>انتهت صلاحية جلستك. يرجى تسجيل الدخول مرة أخرى.</value>
+  </data>
+  <data name="RemovedSuccessfully" xml:space="preserve">
+    <value>تمت الإزالة بنجاح.</value>
+  </data>
+  <data name="ShippingMethod_CannotDeleteWithOrders" xml:space="preserve">
+    <value> مينفعش تمسح طريقة الشحن دي لأنها مرتبطة بطلبات موجودة. ممكن توقفها (Inactive) بدل ما تمسحها.</value>
+  </data>
+  <data name="ShippingMethod_DuplicateTranslations" xml:space="preserve">
+    <value> فيه لغة مكررة في الترجمات.</value>
+  </data>
+  <data name="ShippingMethod_TranslationNameRequired" xml:space="preserve">
+    <value> الاسم مطلوب لترجمة {0}.</value>
+  </data>
+  <data name="SomethingWentWrong" xml:space="preserve">
+    <value>حدث خطأ ما</value>
+  </data>
+  <data name="TestLan" xml:space="preserve">
+    <value>عربي</value>
+  </data>
+  <data name="TranslationNotFound" xml:space="preserve">
+    <value>لم يتم العثور على ترجمة {0}.</value>
+  </data>
+  <data name="TranslationRequired" xml:space="preserve">
+    <value>ترجمة {0} لـ {1} مطلوبة.</value>
+  </data>
+  <data name="UpdatedSuccessfully" xml:space="preserve">
+    <value>تم تحديث {0} بنجاح.</value>
+  </data>
+  <data name="UserBannedSuccessfully" xml:space="preserve">
+    <value>تم حظر المستخدم بنجاح.</value>
+  </data>
+  <data name="UserCreatedSuccessfully" xml:space="preserve">
+    <value>تم إنشاء المستخدم بنجاح.</value>
+  </data>
+  <data name="UserDeletedSuccessfully" xml:space="preserve">
+    <value>تم حذف المستخدم بنجاح.</value>
+  </data>
+  <data name="UserRoleChangedSuccessfully" xml:space="preserve">
+    <value>تم تغيير دور المستخدم بنجاح.</value>
+  </data>
+  <data name="UserStateChangedSuccessfully" xml:space="preserve">
+    <value>تم تحديث حالة المستخدم بنجاح.</value>
+  </data>
+  <data name="UserUnbannedSuccessfully" xml:space="preserve">
+    <value>تم رفع الحظر عن المستخدم بنجاح.</value>
+  </data>
+  <data name="Wishlist_NotFound" xml:space="preserve">
+    <value>قائمة الرغبات غير موجودة.</value>
+  </data>
+  <data name="WrongPassword" xml:space="preserve">
+    <value>كلمة المرور غير صحيحة.</value>
+  </data>
+</root>

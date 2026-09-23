@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccountAlreadyBanned" xml:space="preserve">
+    <value>La cuenta ya está bloqueada.</value>
+  </data>
+  <data name="AccountAlreadyDeleted" xml:space="preserve">
+    <value>La cuenta ya ha sido eliminada.</value>
+  </data>
+  <data name="AccountAlreadyExists" xml:space="preserve">
+    <value>La cuenta ya existe</value>
+  </data>
+  <data name="AccountBanned" xml:space="preserve">
+    <value>Tu cuenta ha sido bloqueada. Contacta con nuestro equipo de soporte si necesitas ayuda.</value>
+  </data>
+  <data name="AccountDeleted" xml:space="preserve">
+    <value>Tu cuenta ha sido eliminada. Contacta con nuestro equipo de soporte si necesitas ayuda.</value>
+  </data>
+  <data name="AccountDeletedSuccessfully" xml:space="preserve">
+    <value>Tu cuenta ha sido eliminada correctamente.</value>
+  </data>
+  <data name="AccountNotBanned" xml:space="preserve">
+    <value>La cuenta no está bloqueada.</value>
+  </data>
+  <data name="AccountNotDeleted" xml:space="preserve">
+    <value>La cuenta no está marcada como eliminada.</value>
+  </data>
+  <data name="AccountNotFound" xml:space="preserve">
+    <value>No se encontró ninguna cuenta asociada a esta dirección de correo electrónico.</value>
+  </data>
+  <data name="AccountRestoredSuccessfully" xml:space="preserve">
+    <value>La cuenta ha sido restaurada correctamente.</value>
+  </data>
+  <data name="AddedSuccessfully" xml:space="preserve">
+    <value>Agregado correctamente.</value>
+  </data>
+  <data name="Added_Successfully" xml:space="preserve">
+    <value>{0} se agregó correctamente.</value>
+  </data>
+  <data name="AddressDeletedSuccessfully" xml:space="preserve">
+    <value>La dirección se ha eliminado correctamente.</value>
+  </data>
+  <data name="AddressNameAlreadyExists" xml:space="preserve">
+    <value>Ya existe una dirección con este nombre.</value>
+  </data>
+  <data name="AddressNotFound" xml:space="preserve">
+    <value>No se encontró la dirección.</value>
+  </data>
+  <data name="AddressSavedSuccessfully" xml:space="preserve">
+    <value>La dirección se ha guardado correctamente.</value>
+  </data>
+  <data name="AllTranslationsRequired" xml:space="preserve">
+    <value>Debes proporcionar todas las traducciones.</value>
+  </data>
+  <data name="AlreadyExists" xml:space="preserve">
+    <value>{0} ya existe.</value>
+  </data>
+  <data name="BackInStockNotification" xml:space="preserve">
+    <value>Te notificaremos cuando el producto vuelva a estar disponible.</value>
+  </data>
+  <data name="CannotBanManagementUser" xml:space="preserve">
+    <value>No puedes bloquear a un usuario de administración.</value>
+  </data>
+  <data name="CannotChangeEmailAfterActivation" xml:space="preserve">
+    <value>No puedes cambiar tu dirección de correo electrónico después de activar la cuenta.</value>
+  </data>
+  <data name="CannotDeleteWithRelatedRecords" xml:space="preserve">
+    <value>No se puede eliminar {0} porque está vinculado a registros existentes. Considere desactivarlo en su lugar.</value>
+  </data>
+  <data name="CartItem_CustomPrintDataRequired" xml:space="preserve">
+    <value>El nombre y el número de la impresión personalizada son obligatorios.</value>
+  </data>
+  <data name="CartItem_IsAlreadyExit" xml:space="preserve">
+    <value>Este producto ya está en tu carrito con las mismas opciones.</value>
+  </data>
+  <data name="CartItem_IsOutOfStock" xml:space="preserve">
+    <value>Este producto está agotado actualmente, pero puedes añadirlo a tu lista de deseos.</value>
+  </data>
+  <data name="CartItem_NotBelongToUser" xml:space="preserve">
+    <value>Este artículo del carrito no te pertenece.</value>
+  </data>
+  <data name="CartItem_NotEnoughStock" xml:space="preserve">
+    <value>No hay suficiente stock para el producto, talla y cantidad seleccionados.</value>
+  </data>
+  <data name="CollectionCreatedSuccessfully" xml:space="preserve">
+    <value>Colección creada correctamente.</value>
+  </data>
+  <data name="CollectionDeletedSuccessfully" xml:space="preserve">
+    <value>Colección eliminada correctamente.</value>
+  </data>
+  <data name="CollectionNotFound" xml:space="preserve">
+    <value>No se encontró la colección.</value>
+  </data>
+  <data name="CollectionUpdatedSuccessfully" xml:space="preserve">
+    <value>Colección actualizada correctamente.</value>
+  </data>
+  <data name="Coupon_AddedSuccessfully" xml:space="preserve">
+    <value>Cupón agregado correctamente.</value>
+  </data>
+  <data name="Coupon_AllTranslationsRequired" xml:space="preserve">
+    <value>Debes proporcionar todas las traducciones.</value>
+  </data>
+  <data name="Coupon_AssignedSuccessfully" xml:space="preserve">
+    <value>Cupón asignado correctamente.</value>
+  </data>
+  <data name="Coupon_CannotDeleteWithValidUserCoupons" xml:space="preserve">
+    <value>Este cupón no se puede eliminar porque todavía tiene cupones de usuario válidos vinculados. Puedes desactivar el cupón ahora y eliminarlo más tarde.</value>
+  </data>
+  <data name="Coupon_DeletedSuccessfully" xml:space="preserve">
+    <value>Cupón eliminado correctamente.</value>
+  </data>
+  <data name="Coupon_DiscountAmountGreaterThanZero" xml:space="preserve">
+    <value>El importe del descuento debe ser mayor que cero.</value>
+  </data>
+  <data name="Coupon_DiscountAmountNotAllowedForPercentage" xml:space="preserve">
+    <value>No se permite un importe de descuento para los cupones de descuento porcentual.</value>
+  </data>
+  <data name="Coupon_DiscountAmountRequired" xml:space="preserve">
+    <value>El importe del descuento es obligatorio.</value>
+  </data>
+  <data name="Coupon_DiscountPercentageNotAllowedForFixedAmount" xml:space="preserve">
+    <value>No se permite un porcentaje de descuento para los cupones de importe fijo.</value>
+  </data>
+  <data name="Coupon_DiscountPercentageRange" xml:space="preserve">
+    <value>El porcentaje de descuento debe estar entre 0 y 100.</value>
+  </data>
+  <data name="Coupon_DiscountPercentageRequired" xml:space="preserve">
+    <value>El porcentaje de descuento es obligatorio.</value>
+  </data>
+  <data name="Coupon_DiscountValuesNotAllowedForShipping" xml:space="preserve">
+    <value>No se permiten valores de descuento para los cupones de envío.</value>
+  </data>
+  <data name="Coupon_DuplicateCoupon" xml:space="preserve">
+    <value>Este cupón ya existe.</value>
+  </data>
+  <data name="Coupon_DuplicateTranslations" xml:space="preserve">
+    <value>No se permiten traducciones duplicadas del cupón.</value>
+  </data>
+  <data name="Coupon_InvalidType" xml:space="preserve">
+    <value>Tipo de cupón no válido.</value>
+  </data>
+  <data name="Coupon_LoyaltyPointsNotEnough" xml:space="preserve">
+    <value>No tienes suficientes puntos de fidelidad para canjear este cupón.</value>
+  </data>
+  <data name="Coupon_MaximumDiscountAmountGreaterThanZero" xml:space="preserve">
+    <value>El importe máximo del descuento debe ser mayor que cero.</value>
+  </data>
+  <data name="Coupon_MinimumOrderAmountGreaterThanZero" xml:space="preserve">
+    <value>El importe mínimo del pedido debe ser mayor que cero.</value>
+  </data>
+  <data name="Coupon_NotFound" xml:space="preserve">
+    <value>Cupón no encontrado.</value>
+  </data>
+  <data name="Coupon_RequiredPointsGreaterThanZero" xml:space="preserve">
+    <value>Los puntos requeridos deben ser mayores que cero.</value>
+  </data>
+  <data name="Coupon_TranslationDescriptionRequired" xml:space="preserve">
+    <value>La descripción de la traducción del cupón en {0} es obligatoria.</value>
+  </data>
+  <data name="Coupon_TranslationNameRequired" xml:space="preserve">
+    <value>El nombre de la traducción del cupón en {0} es obligatorio.</value>
+  </data>
+  <data name="Coupon_TranslationNotFound" xml:space="preserve">
+    <value>No se encontró la traducción del cupón en {0}.</value>
+  </data>
+  <data name="Coupon_UpdatedSuccessfully" xml:space="preserve">
+    <value>Cupón actualizado correctamente.</value>
+  </data>
+  <data name="CreatedSuccessfully" xml:space="preserve">
+    <value>{0} creado correctamente.</value>
+  </data>
+  <data name="DeletedSuccessfully" xml:space="preserve">
+    <value>La {0}  se ha eliminado correctamente.</value>
+  </data>
+  <data name="DuplicateField" xml:space="preserve">
+    <value>No puedes usar este {0} porque ya existe en {1}.</value>
+  </data>
+  <data name="DuplicateStocks" xml:space="preserve">
+    <value>El stock con talla {0} y tipo {1} se ha añadido dos veces.</value>
+  </data>
+  <data name="DuplicateTranslations" xml:space="preserve">
+    <value>No se permiten traducciones duplicadas.</value>
+  </data>
+  <data name="EmailAlreadyExists" xml:space="preserve">
+    <value>Esta dirección de correo electrónico ya está en uso.</value>
+  </data>
+  <data name="EmailAlreadyVerified" xml:space="preserve">
+    <value>Tu dirección de correo electrónico ya está verificada. Intenta iniciar sesión.</value>
+  </data>
+  <data name="EmailChangedSuccessfully" xml:space="preserve">
+    <value>Tu dirección de correo electrónico se ha cambiado correctamente. Revisa tu nuevo correo electrónico para obtener tu código OTP.</value>
+  </data>
+  <data name="EmailConfirmedSuccessfully" xml:space="preserve">
+    <value>Tu correo electrónico se ha confirmado correctamente. Intenta iniciar sesión.</value>
+  </data>
+  <data name="EmailNotConfirmed" xml:space="preserve">
+    <value>Confirma tu correo electrónico antes de iniciar sesión.</value>
+  </data>
+  <data name="EmailVerificationRequired" xml:space="preserve">
+    <value>Verifica tu correo electrónico usando el código OTP enviado a tu correo electrónico para completar tu registro.</value>
+  </data>
+  <data name="ForgotPasswordEmailSent" xml:space="preserve">
+    <value>Se ha enviado un código para restablecer la contraseña.</value>
+  </data>
+  <data name="ImageAlreadyDeleted" xml:space="preserve">
+    <value>La imagen ya ha sido eliminada.</value>
+  </data>
+  <data name="InsufficientPermissions" xml:space="preserve">
+    <value>No tienes permiso para realizar esta acción.</value>
+  </data>
+  <data name="InvalidOtp" xml:space="preserve">
+    <value>El código OTP que has introducido no es válido.</value>
+  </data>
+  <data name="InvalidRefreshToken" xml:space="preserve">
+    <value>El token de actualización no es válido.</value>
+  </data>
+  <data name="InvalidResetToken" xml:space="preserve">
+    <value>El token para restablecer la contraseña no es válido o ha expirado.</value>
+  </data>
+  <data name="LogoutSuccessfully" xml:space="preserve">
+    <value>Has cerrado sesión correctamente.</value>
+  </data>
+  <data name="MainImageRequired" xml:space="preserve">
+    <value>Se requiere una imagen principal para el género {0}.</value>
+  </data>
+  <data name="MultipleMainImages" xml:space="preserve">
+    <value>Solo se permite una imagen principal por género.</value>
+  </data>
+  <data name="NoDataToUpdate" xml:space="preserve">
+    <value>Se requiere al menos un campo para actualizar.</value>
+  </data>
+  <data name="NonMainImageCannotBeFirst" xml:space="preserve">
+    <value>Una imagen no principal no puede tener el orden de visualización 1.</value>
+  </data>
+  <data name="NotFound" xml:space="preserve">
+    <value>{0}  no encontrado.</value>
+  </data>
+  <data name="Notification_IsAlreadyExit" xml:space="preserve">
+    <value>La notificación ya existe.</value>
+  </data>
+  <data name="OtpExpired" xml:space="preserve">
+    <value>Tu código OTP ha caducado. Solicita uno nuevo.</value>
+  </data>
+  <data name="OtpResendBlocked" xml:space="preserve">
+    <value>Has superado el límite de solicitudes de OTP. Inténtalo de nuevo más tarde.</value>
+  </data>
+  <data name="OtpResendCooldown" xml:space="preserve">
+    <value>Puedes solicitar un nuevo código OTP después de 1 minuto.</value>
+  </data>
+  <data name="OtpResentSuccessfully" xml:space="preserve">
+    <value>Se ha enviado un nuevo código OTP a tu correo electrónico.</value>
+  </data>
+  <data name="PasswordChangedSuccessfully" xml:space="preserve">
+    <value>Tu contraseña se ha cambiado correctamente.</value>
+  </data>
+  <data name="PasswordRequirements" xml:space="preserve">
+    <value>La contraseña debe tener entre 8 y 20 caracteres e incluir al menos una letra mayúscula, una letra minúscula, un número y un carácter especial.</value>
+  </data>
+  <data name="PasswordResetSuccessfully" xml:space="preserve">
+    <value>Tu contraseña se ha restablecido correctamente.</value>
+  </data>
+  <data name="Product_CannotDeleteWithRelatedData" xml:space="preserve">
+    <value>Este producto no se puede eliminar porque todavía está vinculado a otros datos. Puedes desactivar el producto ahora y eliminarlo más tarde.</value>
+  </data>
+  <data name="Product_IsAlreadyExit" xml:space="preserve">
+    <value>El producto ya existe.</value>
+  </data>
+  <data name="Product_IsNotInWishlist" xml:space="preserve">
+    <value>El producto no está en la lista de deseos.</value>
+  </data>
+  <data name="QuantityMustBeGreaterThanZero" xml:space="preserve">
+    <value>La cantidad debe ser mayor que cero.</value>
+  </data>
+  <data name="RefreshTokenExpired" xml:space="preserve">
+    <value>Tu sesión ha expirado. Inicia sesión nuevamente.</value>
+  </data>
+  <data name="RemovedSuccessfully" xml:space="preserve">
+    <value>Eliminado correctamente.</value>
+  </data>
+  <data name="ShippingMethod_CannotDeleteWithOrders" xml:space="preserve">
+    <value> No se puede eliminar este método de envío porque está vinculado a pedidos existentes. Considere desactivarlo en su lugar.</value>
+  </data>
+  <data name="ShippingMethod_DuplicateTranslations" xml:space="preserve">
+    <value>Se encontró un idioma duplicado en las traducciones.</value>
+  </data>
+  <data name="ShippingMethod_TranslationNameRequired" xml:space="preserve">
+    <value>El nombre es obligatorio para la traducción {0}.</value>
+  </data>
+  <data name="SomethingWentWrong" xml:space="preserve">
+    <value>Algo salió mal</value>
+  </data>
+  <data name="TestLan" xml:space="preserve">
+    <value>Español</value>
+  </data>
+  <data name="TranslationNotFound" xml:space="preserve">
+    <value>No se encontró la traducción de {0}.</value>
+  </data>
+  <data name="TranslationRequired" xml:space="preserve">
+    <value>La traducción de {0} para {1} es obligatoria.</value>
+  </data>
+  <data name="UpdatedSuccessfully" xml:space="preserve">
+    <value>{0} actualizada correctamente.</value>
+  </data>
+  <data name="UserBannedSuccessfully" xml:space="preserve">
+    <value>El usuario ha sido bloqueado correctamente.</value>
+  </data>
+  <data name="UserCreatedSuccessfully" xml:space="preserve">
+    <value>El usuario se ha creado correctamente.</value>
+  </data>
+  <data name="UserDeletedSuccessfully" xml:space="preserve">
+    <value>El usuario ha sido eliminado correctamente.</value>
+  </data>
+  <data name="UserRoleChangedSuccessfully" xml:space="preserve">
+    <value>El rol del usuario se ha cambiado correctamente.</value>
+  </data>
+  <data name="UserStateChangedSuccessfully" xml:space="preserve">
+    <value>El estado del usuario se ha actualizado correctamente.</value>
+  </data>
+  <data name="UserUnbannedSuccessfully" xml:space="preserve">
+    <value>El bloqueo del usuario se ha eliminado correctamente.</value>
+  </data>
+  <data name="Wishlist_NotFound" xml:space="preserve">
+    <value>Lista de deseos no encontrada.</value>
+  </data>
+  <data name="WrongPassword" xml:space="preserve">
+    <value>La contraseña no son correctos.</value>
+  </data>
+</root>

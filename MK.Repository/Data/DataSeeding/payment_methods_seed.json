@@ -1,0 +1,82 @@
+[
+  {
+    "IconImageUrl": "uploads/images/paymentMethods/mastercard.png",
+    "Status": "Available",
+    "CreatedAt": "2026-01-01T00:00:00Z",
+    "UpdatedAt": "2026-01-01T00:00:00Z",
+    "Translations": [
+      {
+        "Language": "English",
+        "Name": "Visa / Mastercard"
+      },
+      {
+        "Language": "Arabic",
+        "Name": "فيزا / ماستركارد"
+      },
+      {
+        "Language": "Spanish",
+        "Name": "Visa / Mastercard"
+      }
+    ]
+  },
+  {
+    "IconImageUrl": "uploads/images/paymentMethods/cash.png",
+    "Status": "Available",
+    "CreatedAt": "2026-01-01T00:00:00Z",
+    "UpdatedAt": "2026-01-01T00:00:00Z",
+    "Translations": [
+      {
+        "Language": "English",
+        "Name": "Cash on Delivery"
+      },
+      {
+        "Language": "Arabic",
+        "Name": "الدفع عند الاستلام"
+      },
+      {
+        "Language": "Spanish",
+        "Name": "Pago contra entrega"
+      }
+    ]
+  },
+  {
+    "IconImageUrl": "uploads/images/paymentMethods/instapay.png",
+    "Status": "Available",
+    "CreatedAt": "2026-01-01T00:00:00Z",
+    "UpdatedAt": "2026-01-01T00:00:00Z",
+    "Translations": [
+      {
+        "Language": "English",
+        "Name": "InstaPay"
+      },
+      {
+        "Language": "Arabic",
+        "Name": "إنستا باي"
+      },
+      {
+        "Language": "Spanish",
+        "Name": "InstaPay"
+      }
+    ]
+  },
+  {
+    "IconImageUrl": "uploads/images/paymentMethods/bank.png",
+    "Status": "CommingSoon",
+    "CreatedAt": "2026-01-01T00:00:00Z",
+    "UpdatedAt": "2026-01-01T00:00:00Z",
+    "Translations": [
+      {
+        "Language": "English",
+        "Name": "Bank Transfer"
+      },
+      {
+        "Language": "Arabic",
+        "Name": "تحويل بنكي"
+      },
+      {
+        "Language": "Spanish",
+        "Name": "Transferencia bancaria"
+      }
+    ]
+  }
+]

@@ -1,0 +1,164 @@
+[
+  {
+    "Name": "Lionel Messi",
+    "ImageUrl": "uploads/images/legendCards/Messi.png",
+    "Price": 100,
+    "Status": "Active"
+  },
+  {
+    "Name": "Cristiano Ronaldo",
+    "ImageUrl": "uploads/images/legendCards/Ronaldo.png",
+    "Price": 100,
+    "Status": "Active"
+  },
+  {
+    "Name": "Gianluigi Buffon",
+    "ImageUrl": "uploads/images/legendCards/Buffon.png",
+    "Price": 50,
+    "Status": "Active"
+  },
+  {
+    "Name": "Manuel Neuer",
+    "ImageUrl": "uploads/images/legendCards/Neuer.png",
+    "Price": 50,
+    "Status": "Active"
+  },
+  {
+    "Name": "Dani Alves",
+    "ImageUrl": "uploads/images/legendCards/Alves.png",
+    "Price": 50,
+    "Status": "Active"
+  },
+  {
+    "Name": "Dani Carvajal",
+    "ImageUrl": "uploads/images/legendCards/Carvajal.png",
+    "Price": 50,
+    "Status": "Active"
+  },
+  {
+    "Name": "Paolo Maldini",
+    "ImageUrl": "uploads/images/legendCards/Maldini.png",
+    "Price": 50,
+    "Status": "Active"
+  },
+  {
+    "Name": "Marcelo",
+    "ImageUrl": "uploads/images/legendCards/Marcelo.png",
+    "Price": 50,
+    "Status": "Active"
+  },
+  {
+    "Name": "Sergio Ramos",
+    "ImageUrl": "uploads/images/legendCards/Ramos.png",
+    "Price": 50,
+    "Status": "Active"
+  },
+  {
+    "Name": "Patrick Vieira",
+    "ImageUrl": "uploads/images/legendCards/Vieira.png",
+    "Price": 50,
+    "Status": "Active"
+  },
+  {
+    "Name": "Zinedine Zidane",
+    "ImageUrl": "uploads/images/legendCards/Zidane.png",
+    "Price": 50,
+    "Status": "Active"
+  },
+  {
+    "Name": "Carles Puyol",
+    "ImageUrl": "uploads/images/legendCards/Puyol.png",
+    "Price": 50,
+    "Status": "Active"
+  },
+  {
+    "Name": "Xavi",
+    "ImageUrl": "uploads/images/legendCards/Xavi.png",
+    "Price": 50,
+    "Status": "Active"
+  },
+  {
+    "Name": "Sergio Busquets",
+    "ImageUrl": "uploads/images/legendCards/Busquets.png",
+    "Price": 50,
+    "Status": "Active"
+  },
+  {
+    "Name": "David Beckham",
+    "ImageUrl": "uploads/images/legendCards/Beckham.png",
+    "Price": 50,
+    "Status": "Active"
+  },
+  {
+    "Name": "Son Heung-min",
+    "ImageUrl": "uploads/images/legendCards/Son.png",
+    "Price": 50,
+    "Status": "Active"
+  },
+  {
+    "Name": "Andres Iniesta",
+    "ImageUrl": "uploads/images/legendCards/Iniesta.png",
+    "Price": 50,
+    "Status": "Active"
+  },
+  {
+    "Name": "Toni Kroos",
+    "ImageUrl": "uploads/images/legendCards/Kroos.png",
+    "Price": 50,
+    "Status": "Active"
+  },
+  {
+    "Name": "Marco van Basten",
+    "ImageUrl": "uploads/images/legendCards/Basten.png",
+    "Price": 50,
+    "Status": "Active"
+  },
+  {
+    "Name": "Ronaldo Nazario",
+    "ImageUrl": "uploads/images/legendCards/Nazario.png",
+    "Price": 50,
+    "Status": "Active"
+  },
+  {
+    "Name": "Ronaldinho",
+    "ImageUrl": "uploads/images/legendCards/Ronaldinho.png",
+    "Price": 50,
+    "Status": "Active"
+  },
+  {
+    "Name": "Luka Modric",
+    "ImageUrl": "uploads/images/legendCards/Modric.png",
+    "Price": 50,
+    "Status": "Active"
+  },
+  {
+    "Name": "Lamine Yamal",
+    "ImageUrl": "uploads/images/legendCards/Yamal.png",
+    "Price": 50,
+    "Status": "Active"
+  },
+  {
+    "Name": "Arda Guler",
+    "ImageUrl": "uploads/images/legendCards/Guler.png",
+    "Price": 50,
+    "Status": "Active"
+  },
+  {
+    "Name": "Pele",
+    "ImageUrl": "uploads/images/legendCards/Pele.png",
+    "Price": 50,
+    "Status": "Active"
+  },
+  {
+    "Name": "Diego Maradona",
+    "ImageUrl": "uploads/images/legendCards/Maradona.png",
+    "Price": 50,
+    "Status": "Active"
+  },
+  {
+    "Name": "The Queen",
+    "ImageUrl": "uploads/images/legendCards/Queen.png",
+    "Price": 50,
+    "Status": "Active"
+  }
+]

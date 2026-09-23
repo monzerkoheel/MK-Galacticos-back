@@ -1,0 +1,512 @@
+[
+  {
+    "CountryId": 1,
+    "NameEn": "Cairo",
+    "NameAr": "القاهرة",
+    "NameEs": "El Cairo"
+  },
+  {
+    "CountryId": 1,
+    "NameEn": "Alexandria",
+    "NameAr": "الإسكندرية",
+    "NameEs": "Alejandría"
+  },
+  {
+    "CountryId": 1,
+    "NameEn": "Port Said",
+    "NameAr": "بورسعيد",
+    "NameEs": "Puerto Said"
+  },
+  {
+    "CountryId": 1,
+    "NameEn": "Suez",
+    "NameAr": "السويس",
+    "NameEs": "Suez"
+  },
+  {
+    "CountryId": 1,
+    "NameEn": "Damietta",
+    "NameAr": "دمياط",
+    "NameEs": "Damieta"
+  },
+  {
+    "CountryId": 1,
+    "NameEn": "Dakahlia",
+    "NameAr": "الدقهلية",
+    "NameEs": "Dacalia"
+  },
+  {
+    "CountryId": 1,
+    "NameEn": "Sharqia",
+    "NameAr": "الشرقية",
+    "NameEs": "Sharqia"
+  },
+  {
+    "CountryId": 1,
+    "NameEn": "Qalyubia",
+    "NameAr": "القليوبية",
+    "NameEs": "Qaliubia"
+  },
+  {
+    "CountryId": 1,
+    "NameEn": "Kafr El Sheikh",
+    "NameAr": "كفر الشيخ",
+    "NameEs": "Kafr el Sheij"
+  },
+  {
+    "CountryId": 1,
+    "NameEn": "Gharbia",
+    "NameAr": "الغربية",
+    "NameEs": "Gharbia"
+  },
+  {
+    "CountryId": 1,
+    "NameEn": "Monufia",
+    "NameAr": "المنوفية",
+    "NameEs": "Menufia"
+  },
+  {
+    "CountryId": 1,
+    "NameEn": "Beheira",
+    "NameAr": "البحيرة",
+    "NameEs": "Beheira"
+  },
+  {
+    "CountryId": 1,
+    "NameEn": "Ismailia",
+    "NameAr": "الإسماعيلية",
+    "NameEs": "Ismailia"
+  },
+  {
+    "CountryId": 1,
+    "NameEn": "Giza",
+    "NameAr": "الجيزة",
+    "NameEs": "Guiza"
+  },
+  {
+    "CountryId": 1,
+    "NameEn": "Beni Suef",
+    "NameAr": "بني سويف",
+    "NameEs": "Beni Suef"
+  },
+  {
+    "CountryId": 1,
+    "NameEn": "Fayoum",
+    "NameAr": "الفيوم",
+    "NameEs": "El Fayum"
+  },
+  {
+    "CountryId": 1,
+    "NameEn": "Minya",
+    "NameAr": "المنيا",
+    "NameEs": "Menia"
+  },
+  {
+    "CountryId": 1,
+    "NameEn": "Asyut",
+    "NameAr": "أسيوط",
+    "NameEs": "Asiut"
+  },
+  {
+    "CountryId": 1,
+    "NameEn": "Sohag",
+    "NameAr": "سوهاج",
+    "NameEs": "Sohag"
+  },
+  {
+    "CountryId": 1,
+    "NameEn": "Qena",
+    "NameAr": "قنا",
+    "NameEs": "Qena"
+  },
+  {
+    "CountryId": 1,
+    "NameEn": "Luxor",
+    "NameAr": "الأقصر",
+    "NameEs": "Luxor"
+  },
+  {
+    "CountryId": 1,
+    "NameEn": "Aswan",
+    "NameAr": "أسوان",
+    "NameEs": "Asuán"
+  },
+  {
+    "CountryId": 1,
+    "NameEn": "Red Sea",
+    "NameAr": "البحر الأحمر",
+    "NameEs": "Mar Rojo"
+  },
+  {
+    "CountryId": 1,
+    "NameEn": "New Valley",
+    "NameAr": "الوادي الجديد",
+    "NameEs": "Valle Nuevo"
+  },
+  {
+    "CountryId": 1,
+    "NameEn": "Matrouh",
+    "NameAr": "مطروح",
+    "NameEs": "Matruh"
+  },
+  {
+    "CountryId": 1,
+    "NameEn": "North Sinai",
+    "NameAr": "شمال سيناء",
+    "NameEs": "Sinaí del Norte"
+  },
+  {
+    "CountryId": 1,
+    "NameEn": "South Sinai",
+    "NameAr": "جنوب سيناء",
+    "NameEs": "Sinaí del Sur"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Álava",
+    "NameAr": "ألافا",
+    "NameEs": "Álava"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Albacete",
+    "NameAr": "ألباسيتي",
+    "NameEs": "Albacete"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Alicante",
+    "NameAr": "أليكانتي",
+    "NameEs": "Alicante"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Almería",
+    "NameAr": "ألمرية",
+    "NameEs": "Almería"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Asturias",
+    "NameAr": "أستورياس",
+    "NameEs": "Asturias"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Ávila",
+    "NameAr": "أفيلا",
+    "NameEs": "Ávila"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Badajoz",
+    "NameAr": "بطليوس",
+    "NameEs": "Badajoz"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Barcelona",
+    "NameAr": "برشلونة",
+    "NameEs": "Barcelona"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Burgos",
+    "NameAr": "برغش",
+    "NameEs": "Burgos"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Cáceres",
+    "NameAr": "قصرش",
+    "NameEs": "Cáceres"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Cádiz",
+    "NameAr": "قادس",
+    "NameEs": "Cádiz"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Cantabria",
+    "NameAr": "كانتابريا",
+    "NameEs": "Cantabria"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Castellón",
+    "NameAr": "كاستيون",
+    "NameEs": "Castellón"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Ciudad Real",
+    "NameAr": "ثيوداد ريال",
+    "NameEs": "Ciudad Real"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Córdoba",
+    "NameAr": "قرطبة",
+    "NameEs": "Córdoba"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Cuenca",
+    "NameAr": "كوينكا",
+    "NameEs": "Cuenca"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Girona",
+    "NameAr": "جيرونا",
+    "NameEs": "Girona"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Granada",
+    "NameAr": "غرناطة",
+    "NameEs": "Granada"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Guadalajara",
+    "NameAr": "غوادالاخارا",
+    "NameEs": "Guadalajara"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Gipuzkoa",
+    "NameAr": "غيبوثكوا",
+    "NameEs": "Gipuzkoa"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Huelva",
+    "NameAr": "ويلبا",
+    "NameEs": "Huelva"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Huesca",
+    "NameAr": "وشقة",
+    "NameEs": "Huesca"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Illes Balears",
+    "NameAr": "جزر البليار",
+    "NameEs": "Islas Baleares"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Jaén",
+    "NameAr": "خاين",
+    "NameEs": "Jaén"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "La Coruña",
+    "NameAr": "لا كورونيا",
+    "NameEs": "La Coruña"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "La Rioja",
+    "NameAr": "لاريوخا",
+    "NameEs": "La Rioja"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Las Palmas",
+    "NameAr": "لاس بالماس",
+    "NameEs": "Las Palmas"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "León",
+    "NameAr": "ليون",
+    "NameEs": "León"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Lleida",
+    "NameAr": "لييدا",
+    "NameEs": "Lérida"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Lugo",
+    "NameAr": "لوغو",
+    "NameEs": "Lugo"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Madrid",
+    "NameAr": "مدريد",
+    "NameEs": "Madrid"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Málaga",
+    "NameAr": "مالقة",
+    "NameEs": "Málaga"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Murcia",
+    "NameAr": "مورسيا",
+    "NameEs": "Murcia"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Navarre",
+    "NameAr": "نافارا",
+    "NameEs": "Navarra"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Ourense",
+    "NameAr": "أورينسي",
+    "NameEs": "Orense"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Palencia",
+    "NameAr": "بالنسيا",
+    "NameEs": "Palencia"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Pontevedra",
+    "NameAr": "بونتيفيدرا",
+    "NameEs": "Pontevedra"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Salamanca",
+    "NameAr": "سالامانكا",
+    "NameEs": "Salamanca"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Santa Cruz de Tenerife",
+    "NameAr": "سانتا كروز دي تينيريفي",
+    "NameEs": "Santa Cruz de Tenerife"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Segovia",
+    "NameAr": "شقوبية",
+    "NameEs": "Segovia"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Seville",
+    "NameAr": "إشبيلية",
+    "NameEs": "Sevilla"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Soria",
+    "NameAr": "سوريا",
+    "NameEs": "Soria"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Tarragona",
+    "NameAr": "طراغونة",
+    "NameEs": "Tarragona"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Teruel",
+    "NameAr": "تيرويل",
+    "NameEs": "Teruel"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Toledo",
+    "NameAr": "طليطلة",
+    "NameEs": "Toledo"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Valencia",
+    "NameAr": "فالنسيا",
+    "NameEs": "Valencia"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Valladolid",
+    "NameAr": "بلد الوليد",
+    "NameEs": "Valladolid"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Bizkaia",
+    "NameAr": "بيسكاي",
+    "NameEs": "Bizkaia"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Zamora",
+    "NameAr": "ثامورا",
+    "NameEs": "Zamora"
+  },
+  {
+    "CountryId": 2,
+    "NameEn": "Zaragoza",
+    "NameAr": "سرقسطة",
+    "NameEs": "Zaragoza"
+  },
+  {
+    "CountryId": 3,
+    "NameEn": "New South Wales",
+    "NameAr": "نيو ساوث ويلز",
+    "NameEs": "Nueva Gales del Sur"
+  },
+  {
+    "CountryId": 3,
+    "NameEn": "Victoria",
+    "NameAr": "فيكتوريا",
+    "NameEs": "Victoria"
+  },
+  {
+    "CountryId": 3,
+    "NameEn": "Queensland",
+    "NameAr": "كوينزلاند",
+    "NameEs": "Queensland"
+  },
+  {
+    "CountryId": 3,
+    "NameEn": "Western Australia",
+    "NameAr": "أستراليا الغربية",
+    "NameEs": "Australia Occidental"
+  },
+  {
+    "CountryId": 3,
+    "NameEn": "South Australia",
+    "NameAr": "أستراليا الجنوبية",
+    "NameEs": "Australia Meridional"
+  },
+  {
+    "CountryId": 3,
+    "NameEn": "Tasmania",
+    "NameAr": "تسمانيا",
+    "NameEs": "Tasmania"
+  },
+  {
+    "CountryId": 3,
+    "NameEn": "Northern Territory",
+    "NameAr": "الإقليم الشمالي",
+    "NameEs": "Territorio del Norte"
+  },
+  {
+    "CountryId": 3,
+    "NameEn": "Australian Capital Territory",
+    "NameAr": "إقليم العاصمة الأسترالية",
+    "NameEs": "Territorio de la Capital Australiana"
+  }
+]

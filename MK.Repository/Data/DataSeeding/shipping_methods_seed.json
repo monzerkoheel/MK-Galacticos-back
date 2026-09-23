@@ -1,0 +1,44 @@
+[
+  {
+    "Price": 50,
+    "EstimatedDeliveryDays": 3,
+    "Status": "Active",
+    "CreatedAt": "2026-09-22T00:00:00Z",
+    "UpdatedAt": "2026-09-22T00:00:00Z",
+    "Translations": [
+      {
+        "Language": "English",
+        "Name": "Standard Shipping"
+      },
+      {
+        "Language": "Arabic",
+        "Name": "الشحن العادي"
+      },
+      {
+        "Language": "Spanish",
+        "Name": "Envío estándar"
+      }
+    ]
+  },
+  {
+    "Price": 150,
+    "EstimatedDeliveryDays": 1,
+    "Status": "Active",
+    "CreatedAt": "2026-09-22T00:00:00Z",
+    "UpdatedAt": "2026-09-22T00:00:00Z",
+    "Translations": [
+      {
+        "Language": "English",
+        "Name": "Express Shipping"
+      },
+      {
+        "Language": "Arabic",
+        "Name": "الشحن السريع"
+      },
+      {
+        "Language": "Spanish",
+        "Name": "Envío urgente"
+      }
+    ]
+  }
+]
