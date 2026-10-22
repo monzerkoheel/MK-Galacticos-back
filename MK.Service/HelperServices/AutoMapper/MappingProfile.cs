@@ -3,7 +3,9 @@ using MK.Core.DTOs;
 using MK.Core.DTOs.Account.Information;
 using MK.Core.DTOs.Collections;
 using MK.Core.DTOs.Coupons;
+using MK.Core.DTOs.FanRequests;
 using MK.Core.DTOs.LegendCards;
+using MK.Core.DTOs.Orders;
 using MK.Core.DTOs.PaymentMethods;
 using MK.Core.DTOs.Products;
 using MK.Core.DTOs.ShippingMethods;
@@ -337,6 +339,39 @@ namespace MK.Service.HelperServices
                 .ForMember(dest => dest.Language, opt => opt.MapFrom(src => src.Language))
                 .ForMember(dest => dest.ProductName, opt => opt.MapFrom(src => src.Name));
 
+            CreateMap<Order, OrderDto>()
+                .ForMember(dest => dest.CustomerName,
+                    opt => opt.MapFrom(src => src.User != null ? src.User.FullName : null))
+                .ForMember(dest => dest.CustomerEmail,
+                    opt => opt.MapFrom(src => src.User != null ? src.User.Email : null))
+                .ForMember(dest => dest.ItemsCount,
+                    opt => opt.MapFrom(src => src.Items.Count));
+
+            CreateMap<FanRequest, FanRequestDto>()
+                .ForMember(dest => dest.ImageUrl,
+                           opt => opt.MapFrom<ImageUrlResolver<FanRequest, FanRequestDto>, string?>(src => src.ImageUrl))
+                .ForMember(dest => dest.UserFullName, opt => opt.MapFrom(src => src.User.FullName))
+                .ForMember(dest => dest.UserImageUrl,
+                           opt => opt.MapFrom<ImageUrlResolver<FanRequest, FanRequestDto>, string?>(src => src.User.ProfileImageUrl))
+                .ForMember(dest => dest.IsLikedByCurrentUser, opt => opt.Ignore());
+
+            CreateMap<FanRequest, MyFanRequestDto>()
+                .ForMember(dest => dest.ImageUrl,
+                           opt => opt.MapFrom<ImageUrlResolver<FanRequest, MyFanRequestDto>, string?>(src => src.ImageUrl));
+
+            CreateMap<FanRequest, ManagementFanRequestDto>()
+                .ForMember(dest => dest.ImageUrl,
+                           opt => opt.MapFrom<ImageUrlResolver<FanRequest, ManagementFanRequestDto>, string?>(src => src.ImageUrl))
+                .ForMember(dest => dest.UserFullName, opt => opt.MapFrom(src => src.User.FullName))
+                .ForMember(dest => dest.UserImageUrl,
+                           opt => opt.MapFrom<ImageUrlResolver<FanRequest, ManagementFanRequestDto>, string?>(src => src.User.ProfileImageUrl));
+
+            CreateMap<FanRequest, ManagementFanRequestDetailsDto>()
+                .ForMember(dest => dest.ImageUrl,
+                           opt => opt.MapFrom<ImageUrlResolver<FanRequest, ManagementFanRequestDetailsDto>, string?>(src => src.ImageUrl))
+                .ForMember(dest => dest.UserFullName, opt => opt.MapFrom(src => src.User.FullName))
+                .ForMember(dest => dest.UserImageUrl,
+                           opt => opt.MapFrom<ImageUrlResolver<FanRequest, ManagementFanRequestDetailsDto>, string?>(src => src.User.ProfileImageUrl));
         }
     }
 }

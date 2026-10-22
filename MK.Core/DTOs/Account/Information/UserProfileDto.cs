@@ -1,4 +1,5 @@
-﻿using MK.Core.Models;
+﻿using MK.Core.DTOs.Orders;
+using MK.Core.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +21,7 @@ namespace MK.Core.DTOs.Account.Information
         public int WishlistItemsCount { get; set; }
         public int FanRequestsCount { get; set; }
         public ICollection<UserAddressDto> Addresses { get; set; }
-        public ICollection<Order> Orders { get; set; }
+        public ICollection<OrderDto> Orders { get; set; } = new List<OrderDto>();
         public ICollection<UserCouponDto> UserCoupons { get; set; }
     }
 }

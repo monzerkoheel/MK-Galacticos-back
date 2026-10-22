@@ -14,7 +14,7 @@ using MK.Core.HelperModels.Exceptions;
 using MK.Core.Localization.Resources;
 using MK.Core.Models;
 using MK.Repository.Specifications;
-using MK.Service.HelperServices.EmailSevrices;
+using MK.Service.HelperServices.EmailSevrices.Templates;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;

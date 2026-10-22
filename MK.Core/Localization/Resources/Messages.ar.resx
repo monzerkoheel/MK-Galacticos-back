@@ -135,6 +135,9 @@
   <data name="AccountDeletedSuccessfully" xml:space="preserve">
     <value>تم حذف حسابك بنجاح.</value>
   </data>
+  <data name="AccountNotAllowedToCreate" xml:space="preserve">
+    <value>لا يُسمح لحسابك بإنشاء طلبات المعجبين.</value>
+  </data>
   <data name="AccountNotBanned" xml:space="preserve">
     <value>الحساب غير محظور.</value>
   </data>
@@ -165,11 +168,23 @@
   <data name="AddressSavedSuccessfully" xml:space="preserve">
     <value>تم حفظ العنوان بنجاح.</value>
   </data>
+  <data name="AiRejectionFallbackReason" xml:space="preserve">
+    <value>المحتوى يخالف قواعد المنصة.</value>
+  </data>
   <data name="AllTranslationsRequired" xml:space="preserve">
     <value>يجب إدخال جميع الترجمات.</value>
   </data>
   <data name="AlreadyExists" xml:space="preserve">
     <value>{0} موجود بالفعل.</value>
+  </data>
+  <data name="AlreadyLiked" xml:space="preserve">
+    <value>لقد سجلت إعجابك بطلب المعجبين هذا بالفعل.</value>
+  </data>
+  <data name="AutoBanReason" xml:space="preserve">
+    <value>تم حظر الحساب تلقائيًا بعد رفض 0 من طلبات المعجبين بواسطة نظام المراجعة الآلي.</value>
+  </data>
+  <data name="AvailableOnSiteNotification" xml:space="preserve">
+    <value>طلب المعجبين الذي دعمته أصبح متاحًا الآن على الموقع.</value>
   </data>
   <data name="BackInStockNotification" xml:space="preserve">
     <value>سنُخطرك عندما يتوفر المنتج مرة أخرى.</value>
@@ -209,6 +224,24 @@
   </data>
   <data name="CollectionUpdatedSuccessfully" xml:space="preserve">
     <value>تم تحديث المجموعة بنجاح.</value>
+  </data>
+  <data name="CouponAlreadyUsed" xml:space="preserve">
+    <value>تم استخدام هذا الكوبون بالفعل.</value>
+  </data>
+  <data name="CouponCodeRequired" xml:space="preserve">
+    <value>كود الكوبون مطلوب عند اختيار كوبون.</value>
+  </data>
+  <data name="CouponCodeShouldBeNull" xml:space="preserve">
+    <value>يجب أن يكون كود الكوبون فارغًا عند عدم اختيار كوبون.</value>
+  </data>
+  <data name="CouponDiscountExceedsOrderTotal" xml:space="preserve">
+    <value>لا يمكن أن يكون خصم الكوبون أكبر من أو مساويًا لإجمالي الطلب.</value>
+  </data>
+  <data name="CouponExpired" xml:space="preserve">
+    <value>انتهت صلاحية هذا الكوبون.</value>
+  </data>
+  <data name="CouponMinimumOrderAmountNotMet" xml:space="preserve">
+    <value>قيمة الطلب لا تستوفي الحد الأدنى المطلوب لاستخدام هذا الكوبون.</value>
   </data>
   <data name="Coupon_AddedSuccessfully" xml:space="preserve">
     <value>تم إضافة الكوبون بنجاح.</value>
@@ -282,11 +315,17 @@
   <data name="Coupon_UpdatedSuccessfully" xml:space="preserve">
     <value>تم تحديث الكوبون بنجاح.</value>
   </data>
+  <data name="CreatedAndPending" xml:space="preserve">
+    <value>تم إرسال طلبك بنجاح، وهو في انتظار مراجعة المسؤول.</value>
+  </data>
   <data name="CreatedSuccessfully" xml:space="preserve">
     <value>تم إنشاء {0} بنجاح.</value>
   </data>
   <data name="DeletedSuccessfully" xml:space="preserve">
     <value>تم حذف {0}  بنجاح.</value>
+  </data>
+  <data name="DescriptionRequired" xml:space="preserve">
+    <value>وصف طلب المعجبين مطلوب.</value>
   </data>
   <data name="DuplicateField" xml:space="preserve">
     <value>لا يمكنك استخدام {0} لأن هذه القيمة موجودة بالفعل في {1}.</value>
@@ -315,23 +354,62 @@
   <data name="EmailVerificationRequired" xml:space="preserve">
     <value>يرجى تأكيد بريدك الإلكتروني باستخدام رمز التحقق (OTP) المُرسل إلى بريدك الإلكتروني لإكمال التسجيل.</value>
   </data>
+  <data name="EmptyCart" xml:space="preserve">
+    <value>لا يمكنك إنشاء طلب بسلة فارغة.</value>
+  </data>
   <data name="ForgotPasswordEmailSent" xml:space="preserve">
     <value>تم إرسال رمز لإعادة تعيين كلمة المرور.</value>
   </data>
   <data name="ImageAlreadyDeleted" xml:space="preserve">
     <value>الصورة محذوفة بالفعل.</value>
   </data>
+  <data name="ImageRequired" xml:space="preserve">
+    <value>صورة طلب المعجبين مطلوبة.</value>
+  </data>
+  <data name="ImageTooLarge" xml:space="preserve">
+    <value>يجب ألا يتجاوز حجم الصورة 5 ميجابايت.</value>
+  </data>
   <data name="InsufficientPermissions" xml:space="preserve">
     <value>ليس لديك صلاحية لتنفيذ هذا الإجراء.</value>
   </data>
+  <data name="InsufficientProductStock" xml:space="preserve">
+    <value>الكمية المطلوبة من هذا المنتج {0} غير متوفرة في المخزون.</value>
+  </data>
+  <data name="InvalidCouponCode" xml:space="preserve">
+    <value>كود الكوبون غير صالح.</value>
+  </data>
+  <data name="InvalidLegendCard" xml:space="preserve">
+    <value>بطاقة الأسطورة غير صالحة.</value>
+  </data>
   <data name="InvalidOtp" xml:space="preserve">
     <value>رمز التحقق الذي أدخلته غير صحيح.</value>
+  </data>
+  <data name="InvalidPaymentMethod" xml:space="preserve">
+    <value>طريقة الدفع غير صالحة.</value>
   </data>
   <data name="InvalidRefreshToken" xml:space="preserve">
     <value>رمز التحديث غير صالح.</value>
   </data>
   <data name="InvalidResetToken" xml:space="preserve">
     <value>رمز إعادة تعيين كلمة المرور غير صالح أو انتهت صلاحيته.</value>
+  </data>
+  <data name="InvalidShippingMethod" xml:space="preserve">
+    <value>طريقة الشحن غير صالحة.</value>
+  </data>
+  <data name="InvalidStatusTransition" xml:space="preserve">
+    <value>لا يُسمح بتغيير الحالة من 0 إلى 1.</value>
+  </data>
+  <data name="InvoiceSentToEmail" xml:space="preserve">
+    <value>تم إرسال الفاتورة إلى بريدك الإلكتروني.</value>
+  </data>
+  <data name="LegendCardIdRequired" xml:space="preserve">
+    <value>معرّف بطاقة الأسطورة مطلوب عند اختيار بطاقة الأسطورة.</value>
+  </data>
+  <data name="LegendCardIdShouldBeNull" xml:space="preserve">
+    <value>يجب أن يكون معرّف بطاقة الأسطورة فارغًا عند عدم اختيار بطاقة الأسطورة.</value>
+  </data>
+  <data name="LikedSuccessfully" xml:space="preserve">
+    <value>تم تسجيل إعجابك بطلب المعجبين بنجاح.</value>
   </data>
   <data name="LogoutSuccessfully" xml:space="preserve">
     <value>تم تسجيل خروجك بنجاح.</value>
@@ -342,17 +420,41 @@
   <data name="MultipleMainImages" xml:space="preserve">
     <value>يُسمح بصورة رئيسية واحدة فقط لكل جنس.</value>
   </data>
+  <data name="NameRequired" xml:space="preserve">
+    <value>اسم طلب المعجبين مطلوب.</value>
+  </data>
   <data name="NoDataToUpdate" xml:space="preserve">
     <value>يجب تحديد حقل واحد على الأقل للتحديث.</value>
   </data>
   <data name="NonMainImageCannotBeFirst" xml:space="preserve">
     <value>لا يمكن أن يكون ترتيب عرض الصورة غير الرئيسية 1.</value>
   </data>
+  <data name="NoShippingMethodForUpgrade" xml:space="preserve">
+    <value>لا توجد طريقة شحن متاحة للترقية من طريقة الشحن الحالية.</value>
+  </data>
+  <data name="NotAvailableForLikes" xml:space="preserve">
+    <value>طلب المعجبين هذا غير متاح للإعجاب.</value>
+  </data>
   <data name="NotFound" xml:space="preserve">
     <value>{0}  غير موجود.</value>
   </data>
   <data name="Notification_IsAlreadyExit" xml:space="preserve">
     <value>الإشعار موجود بالفعل.</value>
+  </data>
+  <data name="NotLiked" xml:space="preserve">
+    <value>لم تسجل إعجابك بطلب المعجبين هذا.</value>
+  </data>
+  <data name="OrderCancellationTimeExpired" xml:space="preserve">
+    <value>يمكنك إلغاء الطلب خلال 8 ساعات فقط من وقت إنشائه.</value>
+  </data>
+  <data name="OrderCancelledSuccessfully" xml:space="preserve">
+    <value>تم إلغاء الطلب بنجاح.</value>
+  </data>
+  <data name="OrderCannotBeCancelled" xml:space="preserve">
+    <value>لا يمكن إلغاء هذا الطلب بعد الآن.</value>
+  </data>
+  <data name="OrderNotBelongToUser" xml:space="preserve">
+    <value>هذا الطلب لا يخصك.</value>
   </data>
   <data name="OtpExpired" xml:space="preserve">
     <value>انتهت صلاحية رمز التحقق. يرجى طلب رمز جديد.</value>
@@ -375,6 +477,9 @@
   <data name="PasswordResetSuccessfully" xml:space="preserve">
     <value>تم إعادة تعيين كلمة المرور بنجاح.</value>
   </data>
+  <data name="ProductPrintUnavailable" xml:space="preserve">
+    <value>التصميم المختار للمنتج لم يعد متاحًا، برجاء اختيار تصميم طباعة آخر.</value>
+  </data>
   <data name="Product_CannotDeleteWithRelatedData" xml:space="preserve">
     <value>لا يمكن حذف هذا المنتج لأنه لا يزال مرتبطًا ببيانات أخرى. يمكنك تعطيل المنتج الآن وحذفه لاحقًا.</value>
   </data>
@@ -389,6 +494,15 @@
   </data>
   <data name="RefreshTokenExpired" xml:space="preserve">
     <value>انتهت صلاحية جلستك. يرجى تسجيل الدخول مرة أخرى.</value>
+  </data>
+  <data name="RejectedByAi" xml:space="preserve">
+    <value>تم رفض طلبك بواسطة نظام المراجعة الآلي. السبب: 0</value>
+  </data>
+  <data name="RejectedByAiAndBanned" xml:space="preserve">
+    <value>تم رفض طلبك بواسطة نظام المراجعة الآلي. السبب: 0 تم حظر حسابك بسبب تكرار المخالفات.</value>
+  </data>
+  <data name="RejectionReasonRequired" xml:space="preserve">
+    <value>يجب إدخال سبب الرفض عند رفض طلب المعجبين.</value>
   </data>
   <data name="RemovedSuccessfully" xml:space="preserve">
     <value>تمت الإزالة بنجاح.</value>
@@ -405,6 +519,9 @@
   <data name="SomethingWentWrong" xml:space="preserve">
     <value>حدث خطأ ما</value>
   </data>
+  <data name="StatusChangedSuccessfully" xml:space="preserve">
+    <value>تم تغيير حالة طلب المعجبين إلى 0 بنجاح.</value>
+  </data>
   <data name="TestLan" xml:space="preserve">
     <value>عربي</value>
   </data>
@@ -413,6 +530,12 @@
   </data>
   <data name="TranslationRequired" xml:space="preserve">
     <value>ترجمة {0} لـ {1} مطلوبة.</value>
+  </data>
+  <data name="UnlikedSuccessfully" xml:space="preserve">
+    <value>تم إلغاء الإعجاب بنجاح.</value>
+  </data>
+  <data name="UnsupportedCouponType" xml:space="preserve">
+    <value>عذرًا، لا يمكننا معالجة هذا الكوبون حاليًا. يمكنك متابعة إتمام الطلب بدونه والتواصل مع الدعم للمساعدة.</value>
   </data>
   <data name="UpdatedSuccessfully" xml:space="preserve">
     <value>تم تحديث {0} بنجاح.</value>

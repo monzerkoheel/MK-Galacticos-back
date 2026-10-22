@@ -2,8 +2,10 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MK.Core.Contracts.ServicesContracts;
+using MK.Core.DTOs;
 using MK.Core.DTOs.Orders;
-using MK.Core.HelperModels.Paymob.RequestsAndResults;
+using MK.Core.HelperModels;
+using MK.Core.Specifications.SpecificationParameters;
 
 namespace MK.API.Controllers
 {
@@ -12,11 +14,9 @@ namespace MK.API.Controllers
     public class OrderController : ControllerBase
     {
         private readonly IOrderService _orderService;
-        private readonly IPaymobService _paymobService;
-        public OrderController(IOrderService orderService, IPaymobService paymobService)
+        public OrderController(IOrderService orderService)
         {
             _orderService = orderService;
-            _paymobService = paymobService;
         }
 
         [Authorize]
@@ -27,20 +27,35 @@ namespace MK.API.Controllers
             return Ok(result);
         }
 
-        [HttpPost("paymob-webhook")]
-        [AllowAnonymous]
-        public async Task<IActionResult> Webhook()
-        {
-            using var reader = new StreamReader(Request.Body);
-            var rawBody = await reader.ReadToEndAsync();
-            var hmac = Request.Query["hmac"].ToString();
+        [Authorize]
+        [HttpPost("{orderId:int}/cancel")]
+        public async Task<IActionResult> CancelOrder(int orderId)
+            => Ok(await _orderService.CancelOrderAsync(orderId));
 
-            await _paymobService.HandlePaymobWebhookAsync(rawBody, hmac);
+        [Authorize(Roles = "Owner,Manager,Admin")]
+        [HttpPut("{orderId:int}/change-state")]
+        public async Task<IActionResult> ChangeOrderState(int orderId, ChangeOrderStateDto dto)
+            => Ok(await _orderService.ChangeOrderStateAsync(orderId, dto));
 
-            return Ok();
-        }
+        [Authorize(Roles = "Owner,Manager,Admin,Editor,Customer Support")]
+        [HttpGet("all-orders")]
+        public async Task<ActionResult<PaginationModel<OrderDto>>> GetAllOrders([FromQuery] OrdersSpecPrams specParams)
+            => Ok(await _orderService.GetAllOrdersAsync(specParams));
 
+        [Authorize(Roles = "Owner,Manager,Admin,Customer Support")]
+        [HttpGet("{orderId:int}/details")]
+        public async Task<ActionResult<OrderDetailsDto>> GetOrderDetails(int orderId)
+            => Ok(await _orderService.GetOrderDetailsAsync(orderId));
 
+        [Authorize(Roles = "Owner,Manager,Admin")]
+        [HttpGet("{orderId:int}/audit-logs")]
+        public async Task<ActionResult<PaginationModel<AuditLogDto>>> GetOrderAuditLogs(int orderId, [FromQuery] PaginationRequest dto)
+            => Ok(await _orderService.GetOrderAuditLogsAsync(orderId, dto));
+
+        [Authorize]
+        [HttpGet("{orderId:int}")]
+        public async Task<ActionResult<OrderDetailsDto>> GetOrderById(int orderId)
+            => Ok(await _orderService.GetOrderByIdAsync(orderId));
 
         [Authorize]
         [HttpGet("{orderId:int}/invoice")]

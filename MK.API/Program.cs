@@ -10,13 +10,13 @@ using MK.API.Errors;
 using MK.API.Middleware;
 using MK.Core.Contracts.RepositoriesContracts;
 using MK.Core.Contracts.ServicesContracts;
-using MK.Core.HelperModels.Paymob_Configuration;
 using MK.Core.Localization;
 using MK.Core.Models;
 using MK.Repository.Data;
 using MK.Repository.Data.Interceptors;
 using MK.Repository.Repositories;
 using MK.Service.BackgroundJobs;
+using MK.Service.BackgroundServices;
 using MK.Service.HelperServices;
 using MK.Service.HelperServices.EmailSevrices;
 using MK.Service.HelperServices.Localization;
@@ -100,8 +100,14 @@ namespace MK.API
             builder.Services.AddScoped<IOrderService, OrderService>();
             builder.Services.AddScoped<IInvoiceService, InvoiceService>();
 
+            builder.Services.AddHttpClient();
 
-            builder.Services.Configure<PaymobOptions>(builder.Configuration.GetSection("Paymob"));
+            builder.Services.AddScoped<IFanRequestService, FanRequestService>();
+            builder.Services.AddScoped<IFanRequestNotificationService, FanRequestNotificationService>();
+            builder.Services.AddHostedService<FanRequestAvailabilityEmailWorker>();
+
+
+            /*builder.Services.Configure<PaymobOptions>(builder.Configuration.GetSection("Paymob"));
             builder.Services.AddHttpClient<IPaymobService, PaymobService>();
             builder.Services.AddHttpClient<IPaymobService, PaymobService>((serviceProvider, client) =>
             {
@@ -110,7 +116,7 @@ namespace MK.API
                     .Value;
 
                 client.BaseAddress = new Uri(options.BaseUrl);
-            });
+            });*/
 
 
 
@@ -195,10 +201,12 @@ namespace MK.API
             var service = scope.ServiceProvider;
 
             var _dbContext = service.GetRequiredService<MKGalacticosDbContext>();
+            var userManager = service.GetRequiredService<UserManager<ApplicationUser>>();
+            var roleManager = service.GetRequiredService<RoleManager<IdentityRole>>();
             var loggerF = service.GetRequiredService<ILoggerFactory>();
             try
             {
-                await DbContextSeeding.SeedAsync(_dbContext);
+                await DbContextSeeding.SeedAsync(_dbContext, userManager, roleManager);
                 await _dbContext.Database.MigrateAsync();
             }
             catch (Exception ex)

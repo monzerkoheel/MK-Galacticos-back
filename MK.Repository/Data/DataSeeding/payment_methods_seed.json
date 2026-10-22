@@ -1,7 +1,7 @@
 [
   {
     "IconImageUrl": "uploads/images/paymentMethods/mastercard.png",
-    "Status": "Available",
+    "Status": "CommingSoon",
     "CreatedAt": "2026-01-01T00:00:00Z",
     "UpdatedAt": "2026-01-01T00:00:00Z",
     "Translations": [
@@ -47,7 +47,7 @@
     "Translations": [
       {
         "Language": "English",
-        "Name": "InstaPay"
+        "Name": "CommingSoon"
       },
       {
         "Language": "Arabic",

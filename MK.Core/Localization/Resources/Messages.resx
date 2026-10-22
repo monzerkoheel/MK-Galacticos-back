@@ -135,6 +135,9 @@
   <data name="AccountDeletedSuccessfully" xml:space="preserve">
     <value>Your account has been deleted successfully.</value>
   </data>
+  <data name="AccountNotAllowedToCreate" xml:space="preserve">
+    <value>Your account is not allowed to create Fan Requests.</value>
+  </data>
   <data name="AccountNotBanned" xml:space="preserve">
     <value>The account is not banned.</value>
   </data>
@@ -165,11 +168,23 @@
   <data name="AddressSavedSuccessfully" xml:space="preserve">
     <value>Address saved successfully.</value>
   </data>
+  <data name="AiRejectionFallbackReason" xml:space="preserve">
+    <value>The content violates the platform rules.</value>
+  </data>
   <data name="AllTranslationsRequired" xml:space="preserve">
     <value>You must provide all translations.</value>
   </data>
   <data name="AlreadyExists" xml:space="preserve">
     <value>{0} already exists.</value>
+  </data>
+  <data name="AlreadyLiked" xml:space="preserve">
+    <value>You have already liked this Fan Request.</value>
+  </data>
+  <data name="AutoBanReason" xml:space="preserve">
+    <value>Automatically banned after 0 Fan Requests were rejected by AI moderation.</value>
+  </data>
+  <data name="AvailableOnSiteNotification" xml:space="preserve">
+    <value>The Fan Request you supported is now available on the website.</value>
   </data>
   <data name="BackInStockNotification" xml:space="preserve">
     <value>We will notify you when the product is back in stock.</value>
@@ -209,6 +224,24 @@
   </data>
   <data name="CollectionUpdatedSuccessfully" xml:space="preserve">
     <value>Collection updated successfully.</value>
+  </data>
+  <data name="CouponAlreadyUsed" xml:space="preserve">
+    <value>This coupon has already been used.</value>
+  </data>
+  <data name="CouponCodeRequired" xml:space="preserve">
+    <value>Coupon code is required when a coupon is selected.</value>
+  </data>
+  <data name="CouponCodeShouldBeNull" xml:space="preserve">
+    <value>Coupon code must be null when no coupon is selected.</value>
+  </data>
+  <data name="CouponDiscountExceedsOrderTotal" xml:space="preserve">
+    <value>The coupon discount cannot be greater than or equal to the order total.</value>
+  </data>
+  <data name="CouponExpired" xml:space="preserve">
+    <value>This coupon has expired.</value>
+  </data>
+  <data name="CouponMinimumOrderAmountNotMet" xml:space="preserve">
+    <value>The order amount does not meet the minimum requirement for this coupon.</value>
   </data>
   <data name="Coupon_AddedSuccessfully" xml:space="preserve">
     <value>Coupon added successfully.</value>
@@ -282,11 +315,17 @@
   <data name="Coupon_UpdatedSuccessfully" xml:space="preserve">
     <value>Coupon updated successfully.</value>
   </data>
+  <data name="CreatedAndPending" xml:space="preserve">
+    <value>Your Fan Request was submitted successfully and is waiting for admin review.</value>
+  </data>
   <data name="CreatedSuccessfully" xml:space="preserve">
     <value>{0} created successfully.</value>
   </data>
   <data name="DeletedSuccessfully" xml:space="preserve">
     <value>{0} deleted successfully.</value>
+  </data>
+  <data name="DescriptionRequired" xml:space="preserve">
+    <value>Fan Request description is required.</value>
   </data>
   <data name="DuplicateField" xml:space="preserve">
     <value>You can't use this {0} because it already exists in {1}.</value>
@@ -315,23 +354,62 @@
   <data name="EmailVerificationRequired" xml:space="preserve">
     <value>Please verify your email using the OTP sent to your email to complete your registration.</value>
   </data>
+  <data name="EmptyCart" xml:space="preserve">
+    <value>You cannot create an order with an empty cart.</value>
+  </data>
   <data name="ForgotPasswordEmailSent" xml:space="preserve">
     <value>Password reset code has been sent.</value>
   </data>
   <data name="ImageAlreadyDeleted" xml:space="preserve">
     <value>Image is already deleted.</value>
   </data>
+  <data name="ImageRequired" xml:space="preserve">
+    <value>Fan Request image is required.</value>
+  </data>
+  <data name="ImageTooLarge" xml:space="preserve">
+    <value>Image size must not exceed 5 MB.</value>
+  </data>
   <data name="InsufficientPermissions" xml:space="preserve">
     <value>You do not have permission to perform this action.</value>
   </data>
+  <data name="InsufficientProductStock" xml:space="preserve">
+    <value>The requested quantity of this product {0} is not available in stock.</value>
+  </data>
+  <data name="InvalidCouponCode" xml:space="preserve">
+    <value>Invalid coupon code.</value>
+  </data>
+  <data name="InvalidLegendCard" xml:space="preserve">
+    <value>Invalid Legend Card.</value>
+  </data>
   <data name="InvalidOtp" xml:space="preserve">
     <value>The OTP you entered is invalid.</value>
+  </data>
+  <data name="InvalidPaymentMethod" xml:space="preserve">
+    <value>Invalid payment method.</value>
   </data>
   <data name="InvalidRefreshToken" xml:space="preserve">
     <value>Invalid refresh token.</value>
   </data>
   <data name="InvalidResetToken" xml:space="preserve">
     <value>The password reset link is invalid or has expired.</value>
+  </data>
+  <data name="InvalidShippingMethod" xml:space="preserve">
+    <value>Invalid shipping method.</value>
+  </data>
+  <data name="InvalidStatusTransition" xml:space="preserve">
+    <value>Changing the status from 0 to 1 is not allowed.</value>
+  </data>
+  <data name="InvoiceSentToEmail" xml:space="preserve">
+    <value>Invoice was sent to your email.</value>
+  </data>
+  <data name="LegendCardIdRequired" xml:space="preserve">
+    <value>Legend Card ID is required when Legend Card is selected.</value>
+  </data>
+  <data name="LegendCardIdShouldBeNull" xml:space="preserve">
+    <value>Legend Card ID must be null when Legend Card is not selected.</value>
+  </data>
+  <data name="LikedSuccessfully" xml:space="preserve">
+    <value>Fan Request liked successfully.</value>
   </data>
   <data name="LogoutSuccessfully" xml:space="preserve">
     <value>You have been logged out successfully.</value>
@@ -342,17 +420,41 @@
   <data name="MultipleMainImages" xml:space="preserve">
     <value>Only one main image is allowed per gender.</value>
   </data>
+  <data name="NameRequired" xml:space="preserve">
+    <value>Fan Request name is required.</value>
+  </data>
   <data name="NoDataToUpdate" xml:space="preserve">
     <value>At least one field is required to update.</value>
   </data>
   <data name="NonMainImageCannotBeFirst" xml:space="preserve">
     <value>A non-main image cannot have display order 1.</value>
   </data>
+  <data name="NoShippingMethodForUpgrade" xml:space="preserve">
+    <value>No shipping method is available for upgrading from the current shipping method.</value>
+  </data>
+  <data name="NotAvailableForLikes" xml:space="preserve">
+    <value>This Fan Request is not available for likes.</value>
+  </data>
   <data name="NotFound" xml:space="preserve">
     <value>{0} not found.</value>
   </data>
   <data name="Notification_IsAlreadyExit" xml:space="preserve">
     <value>Notification already exists.</value>
+  </data>
+  <data name="NotLiked" xml:space="preserve">
+    <value>You have not liked this Fan Request.</value>
+  </data>
+  <data name="OrderCancellationTimeExpired" xml:space="preserve">
+    <value>You can only cancel an order within 8 hours of placing it.</value>
+  </data>
+  <data name="OrderCancelledSuccessfully" xml:space="preserve">
+    <value>Order cancelled successfully.</value>
+  </data>
+  <data name="OrderCannotBeCancelled" xml:space="preserve">
+    <value>This order can no longer be cancelled.</value>
+  </data>
+  <data name="OrderNotBelongToUser" xml:space="preserve">
+    <value>This order does not belong to you.</value>
   </data>
   <data name="OtpExpired" xml:space="preserve">
     <value>Your OTP has expired. Please request a new one.</value>
@@ -375,6 +477,9 @@
   <data name="PasswordResetSuccessfully" xml:space="preserve">
     <value>Your password has been reset successfully.</value>
   </data>
+  <data name="ProductPrintUnavailable" xml:space="preserve">
+    <value>The selected print design is no longer available. Please select another print design.</value>
+  </data>
   <data name="Product_CannotDeleteWithRelatedData" xml:space="preserve">
     <value>This product cannot be deleted because it is still linked to other data. You can deactivate the product now and delete it later.</value>
   </data>
@@ -389,6 +494,15 @@
   </data>
   <data name="RefreshTokenExpired" xml:space="preserve">
     <value>Your session has expired. Please log in again.</value>
+  </data>
+  <data name="RejectedByAi" xml:space="preserve">
+    <value>Your Fan Request was rejected by our automatic review. Reason: 0</value>
+  </data>
+  <data name="RejectedByAiAndBanned" xml:space="preserve">
+    <value>Your Fan Request was rejected by our automatic review. Reason: 0 Your account has been banned because of repeated violations.</value>
+  </data>
+  <data name="RejectionReasonRequired" xml:space="preserve">
+    <value>A rejection reason is required when rejecting a Fan Request.</value>
   </data>
   <data name="RemovedSuccessfully" xml:space="preserve">
     <value>Removed successfully.</value>
@@ -405,6 +519,9 @@
   <data name="SomethingWentWrong" xml:space="preserve">
     <value>Something went wrong</value>
   </data>
+  <data name="StatusChangedSuccessfully" xml:space="preserve">
+    <value>Fan Request status changed to 0 successfully.</value>
+  </data>
   <data name="TestLan" xml:space="preserve">
     <value>English</value>
   </data>
@@ -413,6 +530,12 @@
   </data>
   <data name="TranslationRequired" xml:space="preserve">
     <value>{0} translation {1} is required.</value>
+  </data>
+  <data name="UnlikedSuccessfully" xml:space="preserve">
+    <value>Like removed successfully.</value>
+  </data>
+  <data name="UnsupportedCouponType" xml:space="preserve">
+    <value>Sorry, we cannot process this coupon right now. You can continue checkout without it and contact support for assistance.</value>
   </data>
   <data name="UpdatedSuccessfully" xml:space="preserve">
     <value>{0} updated successfully.</value>

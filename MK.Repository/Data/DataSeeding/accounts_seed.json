@@ -1,0 +1,56 @@
+[
+  {
+    "FullName": "Monzer Koheel",
+    "Email": "Masr34gt@gmail.com",
+    "UserName": "Masr34gt@gmail.com",
+    "Password": "Test@123",
+    "EmailConfirmed": true,
+    "Status": "Active",
+    "Role": "Owner"
+  },
+  {
+    "FullName": "Test Manager",
+    "Email": "TestManager@gmail.com",
+    "UserName": "TestManager@gmail.com",
+    "Password": "Test@123",
+    "EmailConfirmed": true,
+    "Status": "Active",
+    "Role": "Manager"
+  },
+  {
+    "FullName": "Test Admin",
+    "Email": "TestAdmin@gmail.com",
+    "UserName": "TestAdmin@gmail.com",
+    "Password": "Test@123",
+    "EmailConfirmed": true,
+    "Status": "Active",
+    "Role": "Admin"
+  },
+  {
+    "FullName": "Test Editor",
+    "Email": "TestEditor@gmail.com",
+    "UserName": "TestEditor@gmail.com",
+    "Password": "Test@123",
+    "EmailConfirmed": true,
+    "Status": "Active",
+    "Role": "Editor"
+  },
+  {
+    "FullName": "Test Customer Support",
+    "Email": "TestCustomerSupport@gmail.com",
+    "UserName": "TestCustomerSupport@gmail.com",
+    "Password": "Test@123",
+    "EmailConfirmed": true,
+    "Status": "Active",
+    "Role": "Customer Support"
+  },
+  {
+    "FullName": "Test Customer",
+    "Email": "TestCustomer@gmail.com",
+    "UserName": "TestCustomer@gmail.com",
+    "Password": "Test@123",
+    "EmailConfirmed": true,
+    "Status": "Active",
+    "Role": "Customer"
+  }
+]

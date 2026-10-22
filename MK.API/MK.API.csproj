@@ -22,6 +22,7 @@
   <ItemGroup>
     <Folder Include="wwwroot\uploads\images\collections\" />
     <Folder Include="wwwroot\uploads\images\legendCards\" />
+    <Folder Include="wwwroot\uploads\images\fanRequests\" />
     <Folder Include="wwwroot\uploads\images\paymentMethods\" />
     <Folder Include="wwwroot\uploads\images\products\male\" />
     <Folder Include="wwwroot\uploads\images\products\female\" />

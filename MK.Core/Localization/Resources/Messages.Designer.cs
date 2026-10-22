@@ -19,7 +19,7 @@ namespace MK.Core.Localization.Resources {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "18.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class Messages {
@@ -115,6 +115,15 @@ namespace MK.Core.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Your account is not allowed to create Fan Requests..
+        /// </summary>
+        public static string AccountNotAllowedToCreate {
+            get {
+                return ResourceManager.GetString("AccountNotAllowedToCreate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The account is not banned..
         /// </summary>
         public static string AccountNotBanned {
@@ -205,6 +214,15 @@ namespace MK.Core.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The content violates the platform rules..
+        /// </summary>
+        public static string AiRejectionFallbackReason {
+            get {
+                return ResourceManager.GetString("AiRejectionFallbackReason", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to You must provide all translations..
         /// </summary>
         public static string AllTranslationsRequired {
@@ -219,6 +237,33 @@ namespace MK.Core.Localization.Resources {
         public static string AlreadyExists {
             get {
                 return ResourceManager.GetString("AlreadyExists", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You have already liked this Fan Request..
+        /// </summary>
+        public static string AlreadyLiked {
+            get {
+                return ResourceManager.GetString("AlreadyLiked", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Automatically banned after 0 Fan Requests were rejected by AI moderation..
+        /// </summary>
+        public static string AutoBanReason {
+            get {
+                return ResourceManager.GetString("AutoBanReason", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The Fan Request you supported is now available on the website..
+        /// </summary>
+        public static string AvailableOnSiteNotification {
+            get {
+                return ResourceManager.GetString("AvailableOnSiteNotification", resourceCulture);
             }
         }
         
@@ -556,6 +601,69 @@ namespace MK.Core.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to This coupon has already been used..
+        /// </summary>
+        public static string CouponAlreadyUsed {
+            get {
+                return ResourceManager.GetString("CouponAlreadyUsed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Coupon code is required when a coupon is selected..
+        /// </summary>
+        public static string CouponCodeRequired {
+            get {
+                return ResourceManager.GetString("CouponCodeRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Coupon code must be null when no coupon is selected..
+        /// </summary>
+        public static string CouponCodeShouldBeNull {
+            get {
+                return ResourceManager.GetString("CouponCodeShouldBeNull", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The coupon discount cannot be greater than or equal to the order total..
+        /// </summary>
+        public static string CouponDiscountExceedsOrderTotal {
+            get {
+                return ResourceManager.GetString("CouponDiscountExceedsOrderTotal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This coupon has expired..
+        /// </summary>
+        public static string CouponExpired {
+            get {
+                return ResourceManager.GetString("CouponExpired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The order amount does not meet the minimum requirement for this coupon..
+        /// </summary>
+        public static string CouponMinimumOrderAmountNotMet {
+            get {
+                return ResourceManager.GetString("CouponMinimumOrderAmountNotMet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your Fan Request was submitted successfully and is waiting for admin review..
+        /// </summary>
+        public static string CreatedAndPending {
+            get {
+                return ResourceManager.GetString("CreatedAndPending", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {0} created successfully..
         /// </summary>
         public static string CreatedSuccessfully {
@@ -570,6 +678,15 @@ namespace MK.Core.Localization.Resources {
         public static string DeletedSuccessfully {
             get {
                 return ResourceManager.GetString("DeletedSuccessfully", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fan Request description is required..
+        /// </summary>
+        public static string DescriptionRequired {
+            get {
+                return ResourceManager.GetString("DescriptionRequired", resourceCulture);
             }
         }
         
@@ -655,6 +772,15 @@ namespace MK.Core.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to You cannot create an order with an empty cart..
+        /// </summary>
+        public static string EmptyCart {
+            get {
+                return ResourceManager.GetString("EmptyCart", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Password reset code has been sent..
         /// </summary>
         public static string ForgotPasswordEmailSent {
@@ -673,6 +799,24 @@ namespace MK.Core.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Fan Request image is required..
+        /// </summary>
+        public static string ImageRequired {
+            get {
+                return ResourceManager.GetString("ImageRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Image size must not exceed 5 MB..
+        /// </summary>
+        public static string ImageTooLarge {
+            get {
+                return ResourceManager.GetString("ImageTooLarge", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to You do not have permission to perform this action..
         /// </summary>
         public static string InsufficientPermissions {
@@ -682,11 +826,47 @@ namespace MK.Core.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The requested quantity of this product {0} is not available in stock..
+        /// </summary>
+        public static string InsufficientProductStock {
+            get {
+                return ResourceManager.GetString("InsufficientProductStock", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Invalid coupon code..
+        /// </summary>
+        public static string InvalidCouponCode {
+            get {
+                return ResourceManager.GetString("InvalidCouponCode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Invalid Legend Card..
+        /// </summary>
+        public static string InvalidLegendCard {
+            get {
+                return ResourceManager.GetString("InvalidLegendCard", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The OTP you entered is invalid..
         /// </summary>
         public static string InvalidOtp {
             get {
                 return ResourceManager.GetString("InvalidOtp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Invalid payment method..
+        /// </summary>
+        public static string InvalidPaymentMethod {
+            get {
+                return ResourceManager.GetString("InvalidPaymentMethod", resourceCulture);
             }
         }
         
@@ -705,6 +885,60 @@ namespace MK.Core.Localization.Resources {
         public static string InvalidResetToken {
             get {
                 return ResourceManager.GetString("InvalidResetToken", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Invalid shipping method..
+        /// </summary>
+        public static string InvalidShippingMethod {
+            get {
+                return ResourceManager.GetString("InvalidShippingMethod", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Changing the status from 0 to 1 is not allowed..
+        /// </summary>
+        public static string InvalidStatusTransition {
+            get {
+                return ResourceManager.GetString("InvalidStatusTransition", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Invoice was sent to your email..
+        /// </summary>
+        public static string InvoiceSentToEmail {
+            get {
+                return ResourceManager.GetString("InvoiceSentToEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Legend Card ID is required when Legend Card is selected..
+        /// </summary>
+        public static string LegendCardIdRequired {
+            get {
+                return ResourceManager.GetString("LegendCardIdRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Legend Card ID must be null when Legend Card is not selected..
+        /// </summary>
+        public static string LegendCardIdShouldBeNull {
+            get {
+                return ResourceManager.GetString("LegendCardIdShouldBeNull", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fan Request liked successfully..
+        /// </summary>
+        public static string LikedSuccessfully {
+            get {
+                return ResourceManager.GetString("LikedSuccessfully", resourceCulture);
             }
         }
         
@@ -736,6 +970,15 @@ namespace MK.Core.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Fan Request name is required..
+        /// </summary>
+        public static string NameRequired {
+            get {
+                return ResourceManager.GetString("NameRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to At least one field is required to update..
         /// </summary>
         public static string NoDataToUpdate {
@@ -754,6 +997,24 @@ namespace MK.Core.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to No shipping method is available for upgrading from the current shipping method..
+        /// </summary>
+        public static string NoShippingMethodForUpgrade {
+            get {
+                return ResourceManager.GetString("NoShippingMethodForUpgrade", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This Fan Request is not available for likes..
+        /// </summary>
+        public static string NotAvailableForLikes {
+            get {
+                return ResourceManager.GetString("NotAvailableForLikes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {0} not found..
         /// </summary>
         public static string NotFound {
@@ -768,6 +1029,51 @@ namespace MK.Core.Localization.Resources {
         public static string Notification_IsAlreadyExit {
             get {
                 return ResourceManager.GetString("Notification_IsAlreadyExit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You have not liked this Fan Request..
+        /// </summary>
+        public static string NotLiked {
+            get {
+                return ResourceManager.GetString("NotLiked", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You can only cancel an order within 8 hours of placing it..
+        /// </summary>
+        public static string OrderCancellationTimeExpired {
+            get {
+                return ResourceManager.GetString("OrderCancellationTimeExpired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Order cancelled successfully..
+        /// </summary>
+        public static string OrderCancelledSuccessfully {
+            get {
+                return ResourceManager.GetString("OrderCancelledSuccessfully", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This order can no longer be cancelled..
+        /// </summary>
+        public static string OrderCannotBeCancelled {
+            get {
+                return ResourceManager.GetString("OrderCannotBeCancelled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This order does not belong to you..
+        /// </summary>
+        public static string OrderNotBelongToUser {
+            get {
+                return ResourceManager.GetString("OrderNotBelongToUser", resourceCulture);
             }
         }
         
@@ -862,6 +1168,15 @@ namespace MK.Core.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The selected print design is no longer available. Please select another print design..
+        /// </summary>
+        public static string ProductPrintUnavailable {
+            get {
+                return ResourceManager.GetString("ProductPrintUnavailable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Quantity must be greater than zero..
         /// </summary>
         public static string QuantityMustBeGreaterThanZero {
@@ -876,6 +1191,33 @@ namespace MK.Core.Localization.Resources {
         public static string RefreshTokenExpired {
             get {
                 return ResourceManager.GetString("RefreshTokenExpired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your Fan Request was rejected by our automatic review. Reason: 0.
+        /// </summary>
+        public static string RejectedByAi {
+            get {
+                return ResourceManager.GetString("RejectedByAi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your Fan Request was rejected by our automatic review. Reason: 0 Your account has been banned because of repeated violations..
+        /// </summary>
+        public static string RejectedByAiAndBanned {
+            get {
+                return ResourceManager.GetString("RejectedByAiAndBanned", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A rejection reason is required when rejecting a Fan Request..
+        /// </summary>
+        public static string RejectionReasonRequired {
+            get {
+                return ResourceManager.GetString("RejectionReasonRequired", resourceCulture);
             }
         }
         
@@ -925,6 +1267,15 @@ namespace MK.Core.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Fan Request status changed to 0 successfully..
+        /// </summary>
+        public static string StatusChangedSuccessfully {
+            get {
+                return ResourceManager.GetString("StatusChangedSuccessfully", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to English.
         /// </summary>
         public static string TestLan {
@@ -948,6 +1299,24 @@ namespace MK.Core.Localization.Resources {
         public static string TranslationRequired {
             get {
                 return ResourceManager.GetString("TranslationRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Like removed successfully..
+        /// </summary>
+        public static string UnlikedSuccessfully {
+            get {
+                return ResourceManager.GetString("UnlikedSuccessfully", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sorry, we cannot process this coupon right now. You can continue checkout without it and contact support for assistance..
+        /// </summary>
+        public static string UnsupportedCouponType {
+            get {
+                return ResourceManager.GetString("UnsupportedCouponType", resourceCulture);
             }
         }
         

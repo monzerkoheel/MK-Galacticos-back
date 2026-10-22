@@ -19,7 +19,8 @@ namespace MK.Core.Models
         ProductReview,
         DailyLogin,
         Referral,
-        RewardRedemption
+        RewardRedemption,
+        OrderNotCompleted
     }
     public class LoyaltyPointTransaction : ModelBase
     {

@@ -13,7 +13,7 @@ using MK.Core.Models;
 using MK.Core.Specifications.SpecificationParameters;
 using MK.Repository.Specifications;
 using MK.Repository.Specifications.Products_Specifications;
-using MK.Service.HelperServices.EmailSevrices;
+using MK.Service.HelperServices.EmailSevrices.Templates;
 using System.Linq.Expressions;
 
 namespace MK.Service.Services

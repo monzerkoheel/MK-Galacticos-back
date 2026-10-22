@@ -144,6 +144,9 @@
   <data name="LoyaltyTransactionReason_FanRequest" xml:space="preserve">
     <value>Fan Request Publication Reward</value>
   </data>
+  <data name="LoyaltyTransactionReason_OrderNotCompleted" xml:space="preserve">
+    <value>Order Not Completed</value>
+  </data>
   <data name="LoyaltyTransactionReason_ProductReview" xml:space="preserve">
     <value>Product Review Reward</value>
   </data>

@@ -1,4 +1,5 @@
 ﻿using MK.Core.DTOs.Account.Information;
+using MK.Core.DTOs.Orders;
 using MK.Core.DTOs.Products;
 using MK.Core.HelperModels;
 using MK.Core.Models;
@@ -24,5 +25,6 @@ namespace MK.Core.Contracts.ServicesContracts
         Task<PaginationModel<UserCouponDto>> GetUserCouponsAsync(UserCouponsSpecPrams specParams);
         Task<IReadOnlyList<ActiveProductsDto>> GetUserWishList();
         Task<IReadOnlyList<CartItemDto>> GetUserCart();
+        Task<PaginationModel<OrderDto>> GetUserOrdersAsync(PaginationRequest dto);
     }
 }

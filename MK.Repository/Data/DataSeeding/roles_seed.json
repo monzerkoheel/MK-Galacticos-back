@@ -1,0 +1,32 @@
+[
+  {
+    "Name": "Owner",
+    "NormalizedName": "OWNER",
+    "ConcurrencyStamp": "4c91e7a2-56bd-438f-b920-7d3e6158af46"
+  },
+  {
+    "Name": "Manager",
+    "NormalizedName": "MANAGER",
+    "ConcurrencyStamp": "d2a68f50-91c3-47be-8f74-3a196d5c82e1"
+  },
+  {
+    "Name": "Admin",
+    "NormalizedName": "ADMIN",
+    "ConcurrencyStamp": "b7e41963-2c85-4fda-9a31-6e5c82714fb9"
+  },
+  {
+    "Name": "Editor",
+    "NormalizedName": "EDITOR",
+    "ConcurrencyStamp": "e8d4b7c1-3f26-4a91-b582-6c7e9d105af4"
+  },
+  {
+    "Name": "Customer Support",
+    "NormalizedName": "CUSTOMER SUPPORT",
+    "ConcurrencyStamp": "f6a2c9d8-4b17-45e3-8a61-2d9f705cb834"
+  },
+  {
+    "Name": "Customer",
+    "NormalizedName": "CUSTOMER",
+    "ConcurrencyStamp": "8f3c2a91-7d64-4b18-a5e2-91c6f8473d20"
+  }
+]

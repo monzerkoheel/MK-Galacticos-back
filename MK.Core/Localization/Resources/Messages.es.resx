@@ -135,6 +135,9 @@
   <data name="AccountDeletedSuccessfully" xml:space="preserve">
     <value>Tu cuenta ha sido eliminada correctamente.</value>
   </data>
+  <data name="AccountNotAllowedToCreate" xml:space="preserve">
+    <value>Tu cuenta no tiene permiso para crear solicitudes de fans.</value>
+  </data>
   <data name="AccountNotBanned" xml:space="preserve">
     <value>La cuenta no está bloqueada.</value>
   </data>
@@ -165,11 +168,23 @@
   <data name="AddressSavedSuccessfully" xml:space="preserve">
     <value>La dirección se ha guardado correctamente.</value>
   </data>
+  <data name="AiRejectionFallbackReason" xml:space="preserve">
+    <value>El contenido infringe las normas de la plataforma.</value>
+  </data>
   <data name="AllTranslationsRequired" xml:space="preserve">
     <value>Debes proporcionar todas las traducciones.</value>
   </data>
   <data name="AlreadyExists" xml:space="preserve">
     <value>{0} ya existe.</value>
+  </data>
+  <data name="AlreadyLiked" xml:space="preserve">
+    <value>Ya has indicado que te gusta esta solicitud de fans.</value>
+  </data>
+  <data name="AutoBanReason" xml:space="preserve">
+    <value>La cuenta fue suspendida automáticamente después de que el sistema de moderación por IA rechazara 0 solicitudes de fans.</value>
+  </data>
+  <data name="AvailableOnSiteNotification" xml:space="preserve">
+    <value>La solicitud de fans que apoyaste ya está disponible en el sitio web.</value>
   </data>
   <data name="BackInStockNotification" xml:space="preserve">
     <value>Te notificaremos cuando el producto vuelva a estar disponible.</value>
@@ -209,6 +224,24 @@
   </data>
   <data name="CollectionUpdatedSuccessfully" xml:space="preserve">
     <value>Colección actualizada correctamente.</value>
+  </data>
+  <data name="CouponAlreadyUsed" xml:space="preserve">
+    <value>Este cupón ya ha sido utilizado.</value>
+  </data>
+  <data name="CouponCodeRequired" xml:space="preserve">
+    <value>El código del cupón es obligatorio cuando se selecciona un cupón.</value>
+  </data>
+  <data name="CouponCodeShouldBeNull" xml:space="preserve">
+    <value>El código del cupón debe estar vacío cuando no se selecciona ningún cupón.</value>
+  </data>
+  <data name="CouponDiscountExceedsOrderTotal" xml:space="preserve">
+    <value>El descuento del cupón no puede ser mayor o igual al total del pedido.</value>
+  </data>
+  <data name="CouponExpired" xml:space="preserve">
+    <value>Este cupón ha caducado.</value>
+  </data>
+  <data name="CouponMinimumOrderAmountNotMet" xml:space="preserve">
+    <value>El importe del pedido no cumple con el requisito mínimo para este cupón.</value>
   </data>
   <data name="Coupon_AddedSuccessfully" xml:space="preserve">
     <value>Cupón agregado correctamente.</value>
@@ -282,11 +315,17 @@
   <data name="Coupon_UpdatedSuccessfully" xml:space="preserve">
     <value>Cupón actualizado correctamente.</value>
   </data>
+  <data name="CreatedAndPending" xml:space="preserve">
+    <value>Tu solicitud de fans se ha enviado correctamente y está pendiente de revisión por parte del administrador.</value>
+  </data>
   <data name="CreatedSuccessfully" xml:space="preserve">
     <value>{0} creado correctamente.</value>
   </data>
   <data name="DeletedSuccessfully" xml:space="preserve">
     <value>La {0}  se ha eliminado correctamente.</value>
+  </data>
+  <data name="DescriptionRequired" xml:space="preserve">
+    <value>La descripción de la solicitud de fans es obligatoria.</value>
   </data>
   <data name="DuplicateField" xml:space="preserve">
     <value>No puedes usar este {0} porque ya existe en {1}.</value>
@@ -315,23 +354,62 @@
   <data name="EmailVerificationRequired" xml:space="preserve">
     <value>Verifica tu correo electrónico usando el código OTP enviado a tu correo electrónico para completar tu registro.</value>
   </data>
+  <data name="EmptyCart" xml:space="preserve">
+    <value>No puedes crear un pedido con un carrito vacío.</value>
+  </data>
   <data name="ForgotPasswordEmailSent" xml:space="preserve">
     <value>Se ha enviado un código para restablecer la contraseña.</value>
   </data>
   <data name="ImageAlreadyDeleted" xml:space="preserve">
     <value>La imagen ya ha sido eliminada.</value>
   </data>
+  <data name="ImageRequired" xml:space="preserve">
+    <value>La imagen de la solicitud de fans es obligatoria.</value>
+  </data>
+  <data name="ImageTooLarge" xml:space="preserve">
+    <value>El tamaño de la imagen no debe superar los 5 MB.</value>
+  </data>
   <data name="InsufficientPermissions" xml:space="preserve">
     <value>No tienes permiso para realizar esta acción.</value>
   </data>
+  <data name="InsufficientProductStock" xml:space="preserve">
+    <value>La cantidad solicitada de este producto {0} no está disponible en stock.</value>
+  </data>
+  <data name="InvalidCouponCode" xml:space="preserve">
+    <value>Código de cupón no válido.</value>
+  </data>
+  <data name="InvalidLegendCard" xml:space="preserve">
+    <value>Tarjeta legendaria no válida.</value>
+  </data>
   <data name="InvalidOtp" xml:space="preserve">
     <value>El código OTP que has introducido no es válido.</value>
+  </data>
+  <data name="InvalidPaymentMethod" xml:space="preserve">
+    <value>Método de pago no válido.</value>
   </data>
   <data name="InvalidRefreshToken" xml:space="preserve">
     <value>El token de actualización no es válido.</value>
   </data>
   <data name="InvalidResetToken" xml:space="preserve">
     <value>El token para restablecer la contraseña no es válido o ha expirado.</value>
+  </data>
+  <data name="InvalidShippingMethod" xml:space="preserve">
+    <value>Método de envío no válido.</value>
+  </data>
+  <data name="InvalidStatusTransition" xml:space="preserve">
+    <value>No se permite cambiar el estado de 0 a 1.</value>
+  </data>
+  <data name="InvoiceSentToEmail" xml:space="preserve">
+    <value>La factura fue enviada a tu correo electrónico.</value>
+  </data>
+  <data name="LegendCardIdRequired" xml:space="preserve">
+    <value>El ID de la tarjeta legendaria es obligatorio cuando se selecciona una tarjeta legendaria.</value>
+  </data>
+  <data name="LegendCardIdShouldBeNull" xml:space="preserve">
+    <value>El ID de la tarjeta legendaria debe estar vacío cuando no se selecciona una tarjeta legendaria.</value>
+  </data>
+  <data name="LikedSuccessfully" xml:space="preserve">
+    <value>Has indicado que te gusta la solicitud de fans correctamente.</value>
   </data>
   <data name="LogoutSuccessfully" xml:space="preserve">
     <value>Has cerrado sesión correctamente.</value>
@@ -342,17 +420,41 @@
   <data name="MultipleMainImages" xml:space="preserve">
     <value>Solo se permite una imagen principal por género.</value>
   </data>
+  <data name="NameRequired" xml:space="preserve">
+    <value>El nombre de la solicitud de fans es obligatorio.</value>
+  </data>
   <data name="NoDataToUpdate" xml:space="preserve">
     <value>Se requiere al menos un campo para actualizar.</value>
   </data>
   <data name="NonMainImageCannotBeFirst" xml:space="preserve">
     <value>Una imagen no principal no puede tener el orden de visualización 1.</value>
   </data>
+  <data name="NoShippingMethodForUpgrade" xml:space="preserve">
+    <value>No hay ningún método de envío disponible para actualizar desde el método de envío actual.</value>
+  </data>
+  <data name="NotAvailableForLikes" xml:space="preserve">
+    <value>Esta solicitud de fans no está disponible para recibir «Me gusta».</value>
+  </data>
   <data name="NotFound" xml:space="preserve">
     <value>{0}  no encontrado.</value>
   </data>
   <data name="Notification_IsAlreadyExit" xml:space="preserve">
     <value>La notificación ya existe.</value>
+  </data>
+  <data name="NotLiked" xml:space="preserve">
+    <value>No has indicado que te gusta esta solicitud de fans.</value>
+  </data>
+  <data name="OrderCancellationTimeExpired" xml:space="preserve">
+    <value>Solo puedes cancelar un pedido dentro de las 8 horas posteriores a su creación.</value>
+  </data>
+  <data name="OrderCancelledSuccessfully" xml:space="preserve">
+    <value>Pedido cancelado correctamente.</value>
+  </data>
+  <data name="OrderCannotBeCancelled" xml:space="preserve">
+    <value>Este pedido ya no puede ser cancelado.</value>
+  </data>
+  <data name="OrderNotBelongToUser" xml:space="preserve">
+    <value>Este pedido no te pertenece.</value>
   </data>
   <data name="OtpExpired" xml:space="preserve">
     <value>Tu código OTP ha caducado. Solicita uno nuevo.</value>
@@ -375,6 +477,9 @@
   <data name="PasswordResetSuccessfully" xml:space="preserve">
     <value>Tu contraseña se ha restablecido correctamente.</value>
   </data>
+  <data name="ProductPrintUnavailable" xml:space="preserve">
+    <value>El diseño de impresión seleccionado ya no está disponible. Selecciona otro diseño de impresión.</value>
+  </data>
   <data name="Product_CannotDeleteWithRelatedData" xml:space="preserve">
     <value>Este producto no se puede eliminar porque todavía está vinculado a otros datos. Puedes desactivar el producto ahora y eliminarlo más tarde.</value>
   </data>
@@ -389,6 +494,15 @@
   </data>
   <data name="RefreshTokenExpired" xml:space="preserve">
     <value>Tu sesión ha expirado. Inicia sesión nuevamente.</value>
+  </data>
+  <data name="RejectedByAi" xml:space="preserve">
+    <value>Tu solicitud de fans fue rechazada por nuestro sistema de revisión automática. Motivo: 0</value>
+  </data>
+  <data name="RejectedByAiAndBanned" xml:space="preserve">
+    <value>Tu solicitud de fans fue rechazada por nuestro sistema de revisión automática. Motivo: 0 Tu cuenta ha sido suspendida debido a infracciones reiteradas.</value>
+  </data>
+  <data name="RejectionReasonRequired" xml:space="preserve">
+    <value>Es obligatorio indicar un motivo al rechazar una solicitud de fans.</value>
   </data>
   <data name="RemovedSuccessfully" xml:space="preserve">
     <value>Eliminado correctamente.</value>
@@ -405,6 +519,9 @@
   <data name="SomethingWentWrong" xml:space="preserve">
     <value>Algo salió mal</value>
   </data>
+  <data name="StatusChangedSuccessfully" xml:space="preserve">
+    <value>El estado de la solicitud de fans se ha cambiado a 0 correctamente.</value>
+  </data>
   <data name="TestLan" xml:space="preserve">
     <value>Español</value>
   </data>
@@ -413,6 +530,12 @@
   </data>
   <data name="TranslationRequired" xml:space="preserve">
     <value>La traducción de {0} para {1} es obligatoria.</value>
+  </data>
+  <data name="UnlikedSuccessfully" xml:space="preserve">
+    <value>Se ha eliminado tu «Me gusta» correctamente.</value>
+  </data>
+  <data name="UnsupportedCouponType" xml:space="preserve">
+    <value>Lo sentimos, no podemos procesar este cupón en este momento. Puedes continuar con el pedido sin él y contactar con soporte para obtener ayuda.</value>
   </data>
   <data name="UpdatedSuccessfully" xml:space="preserve">
     <value>{0} actualizada correctamente.</value>

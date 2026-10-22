@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MK.Service.HelperServices.EmailSevrices
+namespace MK.Service.HelperServices.EmailSevrices.Templates
 {
     public static class BackInStockTemplate
     {

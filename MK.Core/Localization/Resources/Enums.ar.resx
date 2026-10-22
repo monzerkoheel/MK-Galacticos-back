@@ -144,6 +144,9 @@
   <data name="LoyaltyTransactionReason_FanRequest" xml:space="preserve">
     <value>مكافأة نشر طلب التشجيع </value>
   </data>
+  <data name="LoyaltyTransactionReason_OrderNotCompleted" xml:space="preserve">
+    <value>الطلب لم يكتمل</value>
+  </data>
   <data name="LoyaltyTransactionReason_ProductReview" xml:space="preserve">
     <value>مكافأة تقييم المنتج</value>
   </data>

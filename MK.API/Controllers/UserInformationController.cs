@@ -3,10 +3,12 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MK.Core.Contracts.ServicesContracts;
 using MK.Core.DTOs.Account.Information;
+using MK.Core.DTOs.Orders;
 using MK.Core.DTOs.Products;
 using MK.Core.HelperModels;
 using MK.Core.Models;
 using MK.Core.Specifications.SpecificationParameters;
+using MK.Service.Services;
 
 namespace MK.API.Controllers
 {
@@ -99,5 +101,10 @@ namespace MK.API.Controllers
         [HttpGet("user-cart")]
         public async Task<ActionResult<IReadOnlyList<CartItemDto>>> GetUserCart()
             => Ok(await _userInformationService.GetUserCart());
+
+        [Authorize]
+        [HttpGet("user-orders")]
+        public async Task<ActionResult<PaginationModel<OrderDto>>> GetUserOrders([FromQuery] PaginationRequest dto)
+            => Ok(await _userInformationService.GetUserOrdersAsync(dto));
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace MK.Service.HelperServices.EmailSevrices
+﻿namespace MK.Service.HelperServices.EmailSevrices.Templates
 {
     public static class ForgotPasswordTemplate
     {

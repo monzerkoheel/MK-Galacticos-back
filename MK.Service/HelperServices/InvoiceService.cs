@@ -24,6 +24,7 @@ namespace MK.Service.Services
 
             // Load product images before generating the PDF
             var productImages = new Dictionary<int, byte[]?>();
+            byte[]? legendCardImageBytes = null;
 
             foreach (var item in order.Items)
             {
@@ -39,6 +40,21 @@ namespace MK.Service.Services
                 catch
                 {
                     productImages[item.Id] = null;
+                }
+            }
+            // Load legend card image
+            if (order.HasLegendCard && order.LegendCard is not null &&
+                !string.IsNullOrWhiteSpace(order.LegendCard.ImageUrl))
+            {
+                try
+                {
+                    legendCardImageBytes =
+                        await _httpClient.GetByteArrayAsync(
+                            _fileService.GetFullUrl(order.LegendCard.ImageUrl));
+                }
+                catch
+                {
+                    legendCardImageBytes = null;
                 }
             }
 
@@ -204,7 +220,6 @@ namespace MK.Service.Services
                             // ==================================
                             // ORDER ITEMS
                             // ==================================
-
                             column.Item()
                                 .Text(texts.OrderItems)
                                 .FontSize(14)
@@ -219,7 +234,13 @@ namespace MK.Service.Services
                                         columns.ConstantColumn(70);
 
                                         // PRODUCT
-                                        columns.RelativeColumn(4);
+                                        columns.RelativeColumn(3);
+
+                                        // GENDER
+                                        columns.ConstantColumn(65);
+
+                                        // SIZE
+                                        columns.ConstantColumn(55);
 
                                         // QUANTITY
                                         columns.ConstantColumn(50);
@@ -250,6 +271,22 @@ namespace MK.Service.Services
                                             .Padding(8)
                                             .AlignMiddle()
                                             .Text(texts.Product)
+                                            .FontColor("#D4AF37")
+                                            .Bold();
+
+                                        header.Cell()
+                                            .Background("#151515")
+                                            .Padding(8)
+                                            .AlignMiddle()
+                                            .Text(texts.Gender)
+                                            .FontColor("#D4AF37")
+                                            .Bold();
+
+                                        header.Cell()
+                                            .Background("#151515")
+                                            .Padding(8)
+                                            .AlignMiddle()
+                                            .Text(texts.Size)
                                             .FontColor("#D4AF37")
                                             .Bold();
 
@@ -328,6 +365,28 @@ namespace MK.Service.Services
                                             .Text(productName);
 
                                         // ------------------------------
+                                        // GENDER
+                                        // ------------------------------
+
+                                        table.Cell()
+                                            .MinHeight(65)
+                                            .Padding(8)
+                                            .AlignMiddle()
+                                            .AlignCenter()
+                                            .Text(item.Gender.ToString());
+
+                                        // ------------------------------
+                                        // SIZE
+                                        // ------------------------------
+
+                                        table.Cell()
+                                            .MinHeight(65)
+                                            .Padding(8)
+                                            .AlignMiddle()
+                                            .AlignCenter()
+                                            .Text(item.Size.ToString());
+
+                                        // ------------------------------
                                         // QUANTITY
                                         // ------------------------------
 
@@ -347,8 +406,7 @@ namespace MK.Service.Services
                                             .Padding(8)
                                             .AlignMiddle()
                                             .AlignRight()
-                                            .Text(
-                                                $"{item.UnitPrice:N2} EGP");
+                                            .Text($"{item.UnitPrice:N2} EGP");
 
                                         // ------------------------------
                                         // TOTAL
@@ -359,11 +417,80 @@ namespace MK.Service.Services
                                             .Padding(8)
                                             .AlignMiddle()
                                             .AlignRight()
-                                            .Text(
-                                                $"{item.TotalPrice:N2} EGP");
+                                            .Text($"{item.TotalPrice:N2} EGP");
                                     }
                                 });
 
+
+                            // ============================================================
+                            // LEGEND CARD
+                            // ============================================================
+
+                            if (order.HasLegendCard && order.LegendCard is not null)
+                            {
+                                column.Item()
+                                    .PaddingTop(15)
+                                    .Text(texts.LegendCard)
+                                    .FontSize(14)
+                                    .Bold();
+
+                                column.Item()
+                                    .PaddingTop(8)
+                                    .Border(1)
+                                    .BorderColor("#D4AF37")
+                                    .Padding(10)
+                                    .Row(row =>
+                                    {
+                                        // ------------------------------
+                                        // LEGEND CARD IMAGE
+                                        // ------------------------------
+
+                                        row.ConstantItem(80)
+                                            .Height(100)
+                                            .AlignMiddle()
+                                            .AlignCenter()
+                                            .Element(container =>
+                                            {
+                                                if (legendCardImageBytes is not null)
+                                                {
+                                                    container
+                                                        .Image(legendCardImageBytes)
+                                                        .FitArea();
+                                                }
+                                                else
+                                                {
+                                                    container
+                                                        .Text("-");
+                                                }
+                                            });
+
+                                        // ------------------------------
+                                        // LEGEND CARD INFO
+                                        // ------------------------------
+
+                                        row.RelativeItem()
+                                            .PaddingLeft(12)
+                                            .AlignMiddle()
+                                            .Column(info =>
+                                            {
+                                                info.Item()
+                                                    .Text(order.LegendCard.Name)
+                                                    .FontSize(13)
+                                                    .Bold();
+
+                                                info.Item()
+                                                    .PaddingTop(6)
+                                                    .Text($"{texts.Price}: {order.LegendCard.Price:N2} EGP")
+                                                    .FontSize(11);
+
+                                                info.Item()
+                                                    .PaddingTop(4)
+                                                    .Text($"{texts.Total}: {order.LegendCard.Price:N2} EGP")
+                                                    .FontSize(11)
+                                                    .Bold();
+                                            });
+                                    });
+                            }
                             // ==================================
                             // SUMMARY
                             // ==================================
@@ -385,6 +512,18 @@ namespace MK.Service.Services
                                                 .AlignRight()
                                                 .Text(
                                                     $"{order.Subtotal:N2} EGP");
+                                        });
+
+                                    summary.Item()
+                                        .Row(row =>
+                                        {
+                                            row.RelativeItem()
+                                                .Text(texts.LegendCard);
+
+                                            row.ConstantItem(100)
+                                                .AlignRight()
+                                                .Text(
+                                                    $"{order.LegendCard.Price:N2} EGP");
                                         });
 
                                     summary.Item()
@@ -514,11 +653,17 @@ namespace MK.Service.Services
                     BillTo = "بيانات العميل",
                     ShippingTo = "عنوان الشحن",
                     OrderItems = "المنتجات",
+
                     Image = "الصورة",
                     Product = "المنتج",
+                    Gender = "النوع",
+                    Size = "المقاس",
                     Quantity = "الكمية",
                     Price = "السعر",
                     Total = "الإجمالي",
+
+                    LegendCard = "بطاقة الأسطورة",
+
                     Subtotal = "المجموع الفرعي",
                     Shipping = "الشحن",
                     Discount = "الخصم",
@@ -543,11 +688,17 @@ namespace MK.Service.Services
                     BillTo = "FACTURAR A",
                     ShippingTo = "ENVIAR A",
                     OrderItems = "ARTÍCULOS DEL PEDIDO",
+
                     Image = "Imagen",
                     Product = "Producto",
+                    Gender = "Tipo",
+                    Size = "Talla",
                     Quantity = "Cantidad",
                     Price = "Precio",
                     Total = "Total",
+
+                    LegendCard = "TARJETA LEGENDARIA",
+
                     Subtotal = "Subtotal",
                     Shipping = "Envío",
                     Discount = "Descuento",
@@ -572,11 +723,17 @@ namespace MK.Service.Services
                     BillTo = "BILL TO",
                     ShippingTo = "SHIPPING TO",
                     OrderItems = "ORDER ITEMS",
+
                     Image = "IMAGE",
                     Product = "PRODUCT",
+                    Gender = "GENDER",
+                    Size = "SIZE",
                     Quantity = "QTY",
                     Price = "PRICE",
                     Total = "TOTAL",
+
+                    LegendCard = "LEGEND CARD",
+
                     Subtotal = "Subtotal",
                     Shipping = "Shipping",
                     Discount = "Discount",
@@ -625,6 +782,9 @@ namespace MK.Service.Services
             public string Discount { get; set; } = null!;
             public string GrandTotal { get; set; } = null!;
             public string PaymentInformation { get; set; } = null!;
+            public string Gender { get; set; } = null!;
+            public string Size { get; set; } = null!;
+            public string LegendCard { get; set; } = null!;
             public string Status { get; set; } = null!;
             public string TransactionId { get; set; } = null!;
             public string Paid { get; set; } = null!;

@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using MK.Core.Contracts.RepositoriesContracts;
 using MK.Core.Contracts.ServicesContracts;
 using MK.Core.DTOs.Account.Information;
+using MK.Core.DTOs.Orders;
 using MK.Core.DTOs.Products;
 using MK.Core.HelperModels;
 using MK.Core.HelperModels.Exceptions;
@@ -342,6 +343,20 @@ namespace MK.Service.Services
             return data;
         }
 
+        public async Task<PaginationModel<OrderDto>> GetUserOrdersAsync(PaginationRequest dto)
+        {
+            var ordersSpec = new BaseSpecification<Order>(x => x.UserId == _currentUser.UserId);
+            var totalCount = await _unitOfWork.Repository<Order>().CountAsync(ordersSpec);
+
+            ordersSpec.AddOrderByDes(x => x.CreatedAt);
+            ordersSpec.ApplyPagination((dto.PageIndex - 1) * dto.PageSize, dto.PageSize);
+            ordersSpec.AddInclude(x => x.Items);
+
+            var orders = await _unitOfWork.Repository<Order>().ListAsync(ordersSpec);
+            var data = _mapper.Map<List<OrderDto>>(orders);
+
+            return new PaginationModel<OrderDto>(dto.PageIndex, dto.PageSize, totalCount, data);
+        }
 
 
         #region Helping functions
@@ -350,6 +365,7 @@ namespace MK.Service.Services
             var user = await _userManager.Users
                      .Include(x => x.Addresses)
                      .Include(x => x.Orders)
+                        .ThenInclude(x => x.Items)
                      .Include(x => x.UserCoupons)
                         .ThenInclude(x => x.Coupon)
                             .ThenInclude(x => x.Translations)
@@ -431,6 +447,9 @@ namespace MK.Service.Services
 
                 LoyaltyTransactionReason.RewardRedemption
                     => Enums.LoyaltyTransactionReason_RewardRedemption,
+
+                LoyaltyTransactionReason.OrderNotCompleted
+                    => Enums.LoyaltyTransactionReason_OrderNotCompleted,
 
                 _ => string.Empty
             };
