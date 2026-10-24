@@ -1473,6 +1473,63 @@ namespace MK.Repository.Data.Migrations
                     b.ToTable("ShippingMethodTranslations", (string)null);
                 });
 
+            modelBuilder.Entity("MK.Core.Models.SupportMessage", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<DateTime?>("HandledAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("HandledByUserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<bool>("IsHandled")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false);
+
+                    b.Property<string>("Message")
+                        .IsRequired()
+                        .HasMaxLength(2000)
+                        .HasColumnType("nvarchar(2000)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<byte[]>("RowVersion")
+                        .IsConcurrencyToken()
+                        .IsRequired()
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("rowversion");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("HandledByUserId");
+
+                    b.HasIndex("UserId");
+
+                    b.HasIndex("IsHandled", "CreatedAt");
+
+                    b.ToTable("SupportMessages", (string)null);
+                });
+
             modelBuilder.Entity("MK.Core.Models.UserAddress", b =>
                 {
                     b.Property<int>("Id")
@@ -2142,6 +2199,23 @@ namespace MK.Repository.Data.Migrations
                         .IsRequired();
 
                     b.Navigation("ShippingMethod");
+                });
+
+            modelBuilder.Entity("MK.Core.Models.SupportMessage", b =>
+                {
+                    b.HasOne("MK.Core.Models.ApplicationUser", "HandledByUser")
+                        .WithMany()
+                        .HasForeignKey("HandledByUserId")
+                        .OnDelete(DeleteBehavior.NoAction);
+
+                    b.HasOne("MK.Core.Models.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.SetNull);
+
+                    b.Navigation("HandledByUser");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("MK.Core.Models.UserAddress", b =>

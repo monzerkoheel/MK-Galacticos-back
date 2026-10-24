@@ -19,7 +19,7 @@ namespace MK.Core.Localization.Resources {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "18.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class Messages {
@@ -241,6 +241,24 @@ namespace MK.Core.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to This message is already being handled by {0}..
+        /// </summary>
+        public static string AlreadyHandled {
+            get {
+                return ResourceManager.GetString("AlreadyHandled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This message is already handled..
+        /// </summary>
+        public static string AlreadyHandledUnknown {
+            get {
+                return ResourceManager.GetString("AlreadyHandledUnknown", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to You have already liked this Fan Request..
         /// </summary>
         public static string AlreadyLiked {
@@ -381,6 +399,15 @@ namespace MK.Core.Localization.Resources {
         public static string CollectionUpdatedSuccessfully {
             get {
                 return ResourceManager.GetString("CollectionUpdatedSuccessfully", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This message was just updated by someone else. Please refresh and try again..
+        /// </summary>
+        public static string ConcurrentChange {
+            get {
+                return ResourceManager.GetString("ConcurrentChange", resourceCulture);
             }
         }
         
@@ -781,6 +808,15 @@ namespace MK.Core.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Fan request created successfully. It is pending review..
+        /// </summary>
+        public static string FanRequestCreatedSuccessfully {
+            get {
+                return ResourceManager.GetString("FanRequestCreatedSuccessfully", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Password reset code has been sent..
         /// </summary>
         public static string ForgotPasswordEmailSent {
@@ -961,6 +997,33 @@ namespace MK.Core.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Message marked as handled..
+        /// </summary>
+        public static string MarkedAsHandled {
+            get {
+                return ResourceManager.GetString("MarkedAsHandled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Message marked as not handled..
+        /// </summary>
+        public static string MarkedAsNotHandled {
+            get {
+                return ResourceManager.GetString("MarkedAsNotHandled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Message must not exceed {0} characters..
+        /// </summary>
+        public static string MessageTooLong {
+            get {
+                return ResourceManager.GetString("MessageTooLong", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Only one main image is allowed per gender..
         /// </summary>
         public static string MultipleMainImages {
@@ -1024,6 +1087,15 @@ namespace MK.Core.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to This message is not marked as handled..
+        /// </summary>
+        public static string NotHandled {
+            get {
+                return ResourceManager.GetString("NotHandled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Notification already exists..
         /// </summary>
         public static string Notification_IsAlreadyExit {
@@ -1038,6 +1110,15 @@ namespace MK.Core.Localization.Resources {
         public static string NotLiked {
             get {
                 return ResourceManager.GetString("NotLiked", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Only the person who handled this message, a Manager or the Owner can mark it as not handled..
+        /// </summary>
+        public static string OnlyHandlerOrManagers {
+            get {
+                return ResourceManager.GetString("OnlyHandlerOrManagers", resourceCulture);
             }
         }
         
@@ -1227,6 +1308,33 @@ namespace MK.Core.Localization.Resources {
         public static string RemovedSuccessfully {
             get {
                 return ResourceManager.GetString("RemovedSuccessfully", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Failed to send the reply email..
+        /// </summary>
+        public static string ReplyEmailFailed {
+            get {
+                return ResourceManager.GetString("ReplyEmailFailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reply sent successfully..
+        /// </summary>
+        public static string ReplySentSuccessfully {
+            get {
+                return ResourceManager.GetString("ReplySentSuccessfully", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your message was sent successfully. Our support team will contact you soon..
+        /// </summary>
+        public static string SentSuccessfully {
+            get {
+                return ResourceManager.GetString("SentSuccessfully", resourceCulture);
             }
         }
         

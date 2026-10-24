@@ -9,8 +9,8 @@ namespace MK.Core.Models
 {
     public enum FanRequestStatus
     {
-        Pending,
         Processing,
+        Pending,
         Approved,
         ComingSoon,
         AvailableOnSite,

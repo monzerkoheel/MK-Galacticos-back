@@ -9,6 +9,7 @@ using MK.Core.DTOs.Orders;
 using MK.Core.DTOs.PaymentMethods;
 using MK.Core.DTOs.Products;
 using MK.Core.DTOs.ShippingMethods;
+using MK.Core.DTOs.SupportMessages;
 using MK.Core.HelperModels;
 using MK.Core.Models;
 using MK.Service.HelperServices.AutoMapper.MappingActions;
@@ -372,6 +373,10 @@ namespace MK.Service.HelperServices
                 .ForMember(dest => dest.UserFullName, opt => opt.MapFrom(src => src.User.FullName))
                 .ForMember(dest => dest.UserImageUrl,
                            opt => opt.MapFrom<ImageUrlResolver<FanRequest, ManagementFanRequestDetailsDto>, string?>(src => src.User.ProfileImageUrl));
+
+            CreateMap<SupportMessage, SupportMessageDto>()
+               .ForMember(dest => dest.HandledByName,
+                          opt => opt.MapFrom(src => src.HandledByUser != null ? src.HandledByUser.FullName : null));
         }
     }
 }

@@ -1,4 +1,5 @@
 using AutoMapper;
+using System.Globalization;
 using Microsoft.AspNetCore.Identity;
 using MK.Core.Contracts.RepositoriesContracts;
 using MK.Core.Contracts.ServicesContracts;
@@ -18,12 +19,8 @@ namespace MK.Service.Services
 {
     public class FanRequestService : IFanRequestService
     {
-        // ---- Business rules ----
-        private const int AiRejectionsBanThreshold = 3;     // 3 or more RejectedByAi => auto ban
         private const int LikesRequiredForComingSoon = 100;
         private const int ComingSoonRewardPoints = 100;
-
-        // ---- Validation limits ----
         private const int MaxRejectedReasonLength = 500;
         private const string ImagesFolder = "uploads/images/fanRequests";
 
@@ -32,21 +29,21 @@ namespace MK.Service.Services
         private readonly IFileService _fileService;
         private readonly ICurrentUserService _currentUser;
         private readonly UserManager<ApplicationUser> _userManager;
-        private readonly IUserManagementService _userManagementService;
+        private readonly IFanRequestModerationQueue _moderationQueue;
 
         public FanRequestService(IUnitOfWork unitOfWork,
             IMapper mapper,
             IFileService fileService,
             ICurrentUserService currentUserService,
             UserManager<ApplicationUser> userManager,
-            IUserManagementService userManagementService)
+            IFanRequestModerationQueue moderationQueue)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
             _fileService = fileService;
             _currentUser = currentUserService;
             _userManager = userManager;
-            _userManagementService = userManagementService;
+            _moderationQueue = moderationQueue;
         }
 
         #region Customer
@@ -78,35 +75,19 @@ namespace MK.Service.Services
             FanRequest fanRequest;
             try
             {
-                // =====================================================================================
-                // TODO (AI Module): call the AI moderation here.
-                //
-                // Input  : name, description, dto.Image
-                // Output : { IsApproved (bool), RejectionReason (string) }
-                //
-                // Example of the future code:
-                //   var moderation = await _aiModerationService.ModerateFanRequestAsync(name, description, dto.Image);
-                //   isApprovedByAi  = moderation.IsApproved;
-                //   aiRejectionReason = moderation.RejectionReason;
-                //
-                // Until the AI module is ready every request is treated as approved by AI.
-                // =====================================================================================
-
-                var isApprovedByAi = true;
-                string? aiRejectionReason = null;
-
+                // The AI check can take a while, so the request is saved as "Processing" and the
+                // user gets an immediate response. The moderation itself runs in the background
+                // (FanRequestModerationWorker -> FanRequestModerationProcessor), which later moves
+                // the request to Pending (approved by AI, or sent to manual review if the AI is
+                // unavailable) or to RejectedByAi (+ auto-ban rule).
                 fanRequest = new FanRequest
                 {
                     UserId = userId,
                     Name = name,
                     Description = description,
                     ImageUrl = imageUrl,
-                    Status = isApprovedByAi ? FanRequestStatus.Pending : FanRequestStatus.RejectedByAi,
-                    RejectedReason = isApprovedByAi
-                        ? null
-                        : (string.IsNullOrWhiteSpace(aiRejectionReason)
-                            ? Messages.AiRejectionFallbackReason
-                            : aiRejectionReason.Trim()),
+                    Status = FanRequestStatus.Processing,
+                    RejectedReason = null,
                     LikesCount = 0,
                     CreatedAt = DateTime.UtcNow,
                     UpdatedAt = DateTime.UtcNow
@@ -122,28 +103,16 @@ namespace MK.Service.Services
                 throw;
             }
 
-            if (fanRequest.Status == FanRequestStatus.Pending)
-            {
-                return new OperationResultModel
-                {
-                    IsSuccess = true,
-                    Message = Messages.CreatedAndPending
-                };
-            }
-
-            var aiRejectedCount = await _unitOfWork.Repository<FanRequest>().CountAsync(
-                new BaseSpecification<FanRequest>(x => x.UserId == userId && x.Status == FanRequestStatus.RejectedByAi));
-
-            var isBanned = false;
-            if (aiRejectedCount >= AiRejectionsBanThreshold)
-                isBanned = await TryBanUserAsync(userId);
+            // Hand the request over to the background worker.
+            // If this ever fails, the worker's periodic sweep picks up requests stuck in Processing.
+            _moderationQueue.TryEnqueue(new FanRequestModerationJob(
+                fanRequest.Id,
+                CultureInfo.CurrentUICulture.TwoLetterISOLanguageName));
 
             return new OperationResultModel
             {
-                IsSuccess = false,
-                Message = string.Format(
-                    isBanned ? Messages.RejectedByAiAndBanned : Messages.RejectedByAi,
-                    fanRequest.RejectedReason)
+                IsSuccess = true,
+                Message = Messages.FanRequestCreatedSuccessfully
             };
         }
 
@@ -396,23 +365,6 @@ namespace MK.Service.Services
 
         private static (int PageIndex, int PageSize) NormalizePaging(int pageIndex, int pageSize)
             => (Math.Max(1, pageIndex), Math.Clamp(pageSize, 1, 100));
-
-        private async Task<bool> TryBanUserAsync(string userId)
-        {
-            try
-            {
-                await _userManagementService.BanUserAsync(userId, new BanUserDto
-                {
-                    BannedUntil = null,
-                    BanReason = string.Format(Messages.AutoBanReason, AiRejectionsBanThreshold)
-                });
-                return true;
-            }
-            catch (BadRequestException)
-            {
-                return false;
-            }
-        }
 
         private async Task AwardComingSoonPointsAsync(FanRequest fanRequest)
         {

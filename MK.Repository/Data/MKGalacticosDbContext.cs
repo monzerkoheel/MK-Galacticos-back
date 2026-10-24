@@ -58,4 +58,6 @@ public class MKGalacticosDbContext : IdentityDbContext<ApplicationUser>
     public DbSet<PaymentMethodTranslation> PaymentMethodTranslations => Set<PaymentMethodTranslation>();
     public DbSet<ProductTranslation> ProductTranslations => Set<ProductTranslation>();
     public DbSet<ShippingMethodTranslation> ShippingMethodTranslations => Set<ShippingMethodTranslation>();
+
+    public DbSet<SupportMessage> SupportMessages => Set<SupportMessage>();
 }

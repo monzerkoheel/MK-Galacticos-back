@@ -177,6 +177,12 @@
   <data name="AlreadyExists" xml:space="preserve">
     <value>{0} موجود بالفعل.</value>
   </data>
+  <data name="AlreadyHandled" xml:space="preserve">
+    <value>يتولى {0} معالجة هذه الرسالة بالفعل.</value>
+  </data>
+  <data name="AlreadyHandledUnknown" xml:space="preserve">
+    <value>تمت معالجة هذه الرسالة بالفعل.</value>
+  </data>
   <data name="AlreadyLiked" xml:space="preserve">
     <value>لقد سجلت إعجابك بطلب المعجبين هذا بالفعل.</value>
   </data>
@@ -224,6 +230,9 @@
   </data>
   <data name="CollectionUpdatedSuccessfully" xml:space="preserve">
     <value>تم تحديث المجموعة بنجاح.</value>
+  </data>
+  <data name="ConcurrentChange" xml:space="preserve">
+    <value>تم تحديث هذه الرسالة للتو بواسطة شخص آخر. يُرجى تحديث الصفحة والمحاولة مرة أخرى.</value>
   </data>
   <data name="CouponAlreadyUsed" xml:space="preserve">
     <value>تم استخدام هذا الكوبون بالفعل.</value>
@@ -357,6 +366,9 @@
   <data name="EmptyCart" xml:space="preserve">
     <value>لا يمكنك إنشاء طلب بسلة فارغة.</value>
   </data>
+  <data name="FanRequestCreatedSuccessfully" xml:space="preserve">
+    <value>تم إنشاء طلبك بنجاح، وهو الآن بانتظار المراجعة.</value>
+  </data>
   <data name="ForgotPasswordEmailSent" xml:space="preserve">
     <value>تم إرسال رمز لإعادة تعيين كلمة المرور.</value>
   </data>
@@ -417,6 +429,15 @@
   <data name="MainImageRequired" xml:space="preserve">
     <value>يجب إضافة صورة رئيسية لجنس {0}.</value>
   </data>
+  <data name="MarkedAsHandled" xml:space="preserve">
+    <value>تم تحديد الرسالة على أنها تمت معالجتها.</value>
+  </data>
+  <data name="MarkedAsNotHandled" xml:space="preserve">
+    <value>تم إلغاء تحديد الرسالة على أنها تمت معالجتها.</value>
+  </data>
+  <data name="MessageTooLong" xml:space="preserve">
+    <value>يجب ألا تتجاوز الرسالة {0} حرفًا.</value>
+  </data>
   <data name="MultipleMainImages" xml:space="preserve">
     <value>يُسمح بصورة رئيسية واحدة فقط لكل جنس.</value>
   </data>
@@ -438,11 +459,17 @@
   <data name="NotFound" xml:space="preserve">
     <value>{0}  غير موجود.</value>
   </data>
+  <data name="NotHandled" xml:space="preserve">
+    <value>هذه الرسالة غير محددة على أنها تمت معالجتها.</value>
+  </data>
   <data name="Notification_IsAlreadyExit" xml:space="preserve">
     <value>الإشعار موجود بالفعل.</value>
   </data>
   <data name="NotLiked" xml:space="preserve">
     <value>لم تسجل إعجابك بطلب المعجبين هذا.</value>
+  </data>
+  <data name="OnlyHandlerOrManagers" xml:space="preserve">
+    <value>لا يمكن إلغاء تحديد معالجة هذه الرسالة إلا بواسطة الشخص الذي عالجها أو المدير أو المالك.</value>
   </data>
   <data name="OrderCancellationTimeExpired" xml:space="preserve">
     <value>يمكنك إلغاء الطلب خلال 8 ساعات فقط من وقت إنشائه.</value>
@@ -506,6 +533,15 @@
   </data>
   <data name="RemovedSuccessfully" xml:space="preserve">
     <value>تمت الإزالة بنجاح.</value>
+  </data>
+  <data name="ReplyEmailFailed" xml:space="preserve">
+    <value>فشل إرسال رسالة الرد عبر البريد الإلكتروني.</value>
+  </data>
+  <data name="ReplySentSuccessfully" xml:space="preserve">
+    <value>تم إرسال الرد بنجاح.</value>
+  </data>
+  <data name="SentSuccessfully" xml:space="preserve">
+    <value>تم إرسال رسالتك بنجاح. سيتواصل معك فريق الدعم قريبًا.</value>
   </data>
   <data name="ShippingMethod_CannotDeleteWithOrders" xml:space="preserve">
     <value> مينفعش تمسح طريقة الشحن دي لأنها مرتبطة بطلبات موجودة. ممكن توقفها (Inactive) بدل ما تمسحها.</value>

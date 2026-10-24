@@ -135,5 +135,10 @@ namespace MK.API.Controllers
             return Ok();
         }
 
+
+        [HttpGet("featured-products/{productCount:int}")]
+        public async Task<ActionResult<IReadOnlyList<ActiveProductsDto>>> GetFeaturedProducts(int productCount)
+            => Ok(await _productService.GetFeaturedProductsAsync(productCount));
+
     }
 }

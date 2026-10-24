@@ -177,6 +177,12 @@
   <data name="AlreadyExists" xml:space="preserve">
     <value>{0} already exists.</value>
   </data>
+  <data name="AlreadyHandled" xml:space="preserve">
+    <value>This message is already being handled by {0}.</value>
+  </data>
+  <data name="AlreadyHandledUnknown" xml:space="preserve">
+    <value>This message is already handled.</value>
+  </data>
   <data name="AlreadyLiked" xml:space="preserve">
     <value>You have already liked this Fan Request.</value>
   </data>
@@ -224,6 +230,9 @@
   </data>
   <data name="CollectionUpdatedSuccessfully" xml:space="preserve">
     <value>Collection updated successfully.</value>
+  </data>
+  <data name="ConcurrentChange" xml:space="preserve">
+    <value>This message was just updated by someone else. Please refresh and try again.</value>
   </data>
   <data name="CouponAlreadyUsed" xml:space="preserve">
     <value>This coupon has already been used.</value>
@@ -357,6 +366,9 @@
   <data name="EmptyCart" xml:space="preserve">
     <value>You cannot create an order with an empty cart.</value>
   </data>
+  <data name="FanRequestCreatedSuccessfully" xml:space="preserve">
+    <value>Fan request created successfully. It is pending review.</value>
+  </data>
   <data name="ForgotPasswordEmailSent" xml:space="preserve">
     <value>Password reset code has been sent.</value>
   </data>
@@ -417,6 +429,15 @@
   <data name="MainImageRequired" xml:space="preserve">
     <value>A main image is required for {0} gender.</value>
   </data>
+  <data name="MarkedAsHandled" xml:space="preserve">
+    <value>Message marked as handled.</value>
+  </data>
+  <data name="MarkedAsNotHandled" xml:space="preserve">
+    <value>Message marked as not handled.</value>
+  </data>
+  <data name="MessageTooLong" xml:space="preserve">
+    <value>Message must not exceed {0} characters.</value>
+  </data>
   <data name="MultipleMainImages" xml:space="preserve">
     <value>Only one main image is allowed per gender.</value>
   </data>
@@ -438,11 +459,17 @@
   <data name="NotFound" xml:space="preserve">
     <value>{0} not found.</value>
   </data>
+  <data name="NotHandled" xml:space="preserve">
+    <value>This message is not marked as handled.</value>
+  </data>
   <data name="Notification_IsAlreadyExit" xml:space="preserve">
     <value>Notification already exists.</value>
   </data>
   <data name="NotLiked" xml:space="preserve">
     <value>You have not liked this Fan Request.</value>
+  </data>
+  <data name="OnlyHandlerOrManagers" xml:space="preserve">
+    <value>Only the person who handled this message, a Manager or the Owner can mark it as not handled.</value>
   </data>
   <data name="OrderCancellationTimeExpired" xml:space="preserve">
     <value>You can only cancel an order within 8 hours of placing it.</value>
@@ -506,6 +533,15 @@
   </data>
   <data name="RemovedSuccessfully" xml:space="preserve">
     <value>Removed successfully.</value>
+  </data>
+  <data name="ReplyEmailFailed" xml:space="preserve">
+    <value>Failed to send the reply email.</value>
+  </data>
+  <data name="ReplySentSuccessfully" xml:space="preserve">
+    <value>Reply sent successfully.</value>
+  </data>
+  <data name="SentSuccessfully" xml:space="preserve">
+    <value>Your message was sent successfully. Our support team will contact you soon.</value>
   </data>
   <data name="ShippingMethod_CannotDeleteWithOrders" xml:space="preserve">
     <value>This shipping method cannot be deleted because it is linked to existing orders. Consider deactivating it instead.</value>

@@ -99,6 +99,19 @@ namespace MK.API
             builder.Services.AddScoped<IPaymentMethodsService, PaymentMethodsService>();
             builder.Services.AddScoped<IOrderService, OrderService>();
             builder.Services.AddScoped<IInvoiceService, InvoiceService>();
+            builder.Services.AddScoped<ISupportMessageService, SupportMessageService>();
+            builder.Services.AddScoped<IDashboardService, DashboardService>();
+
+            builder.Services.AddSingleton<IFanRequestModerationQueue, FanRequestModerationQueue>();
+            builder.Services.AddScoped<IFanRequestModerationProcessor, FanRequestModerationProcessor>();
+            builder.Services.AddHostedService<FanRequestModerationWorker>();
+
+            builder.Services.AddHttpClient<IAiModerationService, AiModerationService>(client =>
+            {
+                var baseUrl = builder.Configuration["AiModeration:BaseUrl"] ?? "http://127.0.0.1:8000";
+                client.BaseAddress = new Uri(baseUrl.TrimEnd('/') + "/");
+                client.Timeout = TimeSpan.FromSeconds(60);
+            });
 
             builder.Services.AddHttpClient();
 

@@ -29,5 +29,6 @@ namespace MK.Core.Contracts.ServicesContracts
         Task<OperationResultModel> AddProductToCartAsync(AddCartItemDto dto);
         Task UpdateCartItemQuantityAsync(int cartItemId, UpdateCartItemDto dto);
         Task RemoveProductFromCartAsync(int cartItemId);
+        Task<IReadOnlyList<ActiveProductsDto>> GetFeaturedProductsAsync(int productCount);
     }
 }

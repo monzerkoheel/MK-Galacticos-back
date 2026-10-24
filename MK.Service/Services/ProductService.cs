@@ -1022,6 +1022,16 @@ namespace MK.Service.Services
             return;
         }
 
+        public async Task<IReadOnlyList<ActiveProductsDto>> GetFeaturedProductsAsync(int productCount)
+        {
+            var _productRepo = _unitOfWork.Repository<Product>();
+            var spec = new ProductWithAllDataSpecification(x => x.IsFeatured && x.Visibility == Visibility.Active);
+            spec.AddOrderBy(x => Guid.NewGuid());
+            spec.ApplyPagination(0, productCount);
+            var products = await _productRepo.ListAsync(spec);
+            var result = _mapper.Map<IReadOnlyList<ActiveProductsDto>>(products);
+            return result;
+        }
 
         #region Helper Methods
         private async Task CheckSKU(string sku)
