@@ -9,7 +9,9 @@ namespace MK.Core.Models
 {
     public enum ProductType
     {
-        Jersey
+        Jersey,
+        KidsJersey,
+        MascotFigure
     }
     public enum ProductAvailability
     {
