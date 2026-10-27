@@ -107,7 +107,7 @@ namespace MK.Service.BackgroundJobs
         {
             try
             {
-                using var scope = _scopeFactory.CreateScope();
+                await using var scope = _scopeFactory.CreateAsyncScope();
 
                 var unitOfWork = scope.ServiceProvider.GetRequiredService<IUnitOfWork>();
 

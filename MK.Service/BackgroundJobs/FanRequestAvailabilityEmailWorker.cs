@@ -39,8 +39,8 @@ namespace MK.Service.BackgroundServices
 
                 try
                 {
-                   
-                    using var scope = _scopeFactory.CreateScope();
+
+                    await using var scope = _scopeFactory.CreateAsyncScope();
                     var service = scope.ServiceProvider.GetRequiredService<IFanRequestNotificationService>();
 
                     var sent = await service.SendPendingNotificationsAsync(stoppingToken);

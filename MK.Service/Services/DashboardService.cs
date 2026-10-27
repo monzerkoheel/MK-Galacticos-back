@@ -31,11 +31,13 @@ namespace MK.Service.Services
 
         private readonly MKGalacticosDbContext _dbContext;
         private readonly IFileService _fileService;
+        private readonly ICurrentUserService _currentUser;
 
-        public DashboardService(MKGalacticosDbContext dbContext, IFileService fileService)
+        public DashboardService(MKGalacticosDbContext dbContext, IFileService fileService, ICurrentUserService currentUser)
         {
             _dbContext = dbContext;
             _fileService = fileService;
+            _currentUser = currentUser;
         }
 
         public async Task<DashboardDto> GetDashboardAsync(DashboardRangePrams prams)
@@ -47,7 +49,7 @@ namespace MK.Service.Services
             var current = await GetOrderTotalsAsync(from, toExclusive);
             var previous = await GetOrderTotalsAsync(previousFrom, from);
 
-            return new DashboardDto
+            var result = new DashboardDto
             {
                 Period = new DashboardPeriodDto
                 {
@@ -62,6 +64,10 @@ namespace MK.Service.Services
                 LatestFanRequests = await GetLatestFanRequestsAsync(),
                 LowStockProducts = await GetLowStockProductsAsync()
             };
+            var role = _currentUser.Role;
+            if (role != "Admin" && role != "Owner" && role != "Manager")
+                result.Kpis.TotalRevenue = new DashboardMetricDto { Value = 0, ChangePercent = null };
+            return result;
         }
 
         public async Task<SalesOverviewDto> GetSalesOverviewAsync(SalesOverviewRange range)
@@ -134,7 +140,7 @@ namespace MK.Service.Services
                     Orders = item?.Orders ?? 0
                 });
             }
-
+            
             return result;
         }
 

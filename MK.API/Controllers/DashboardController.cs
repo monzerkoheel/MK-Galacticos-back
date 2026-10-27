@@ -8,7 +8,7 @@ namespace MK.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles = "Owner,Manager,Admin")]
+    [Authorize(Roles = "Owner,Manager,Admin,Editor,Customer Support")]
     public class DashboardController : ControllerBase
     {
         private readonly IDashboardService _dashboardService;
