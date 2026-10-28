@@ -436,9 +436,9 @@ namespace MK.Service.Services
                         throw new NotFoundException(string.Format(Messages.NotFound, "Stock"));
                     if (stock.ProductId != productId)
                         throw new BadRequestException("Stock not belongs to this product");
-                    if (stock.StockQuantity + restock.StockQuantity < 0)
+                    if (restock.StockQuantity < 0)
                         throw new BadRequestException("Stock quantity cannot be negative");
-                    stock.StockQuantity += restock.StockQuantity;
+                    stock.StockQuantity = restock.StockQuantity;
                     if (restock.StockQuantity > 0)
                     {
                         var notificationSpec = new BaseSpecification<AvailabilityNotification>(x => x.ProductId == stock.ProductId 
